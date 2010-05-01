@@ -1,3 +1,7 @@
+2004 10 29
+Removed "range: bytes=" from openft.  This caused false positives.
+Added a cert authority to validcertssl and changed a . to a \.
+
 2004 10 17
 Added subspace and skype (skype pattern could use work).
 

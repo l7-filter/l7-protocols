@@ -17,4 +17,4 @@
 # a different rule
 
 validcertssl
-server-certs@thawte.com|equifax secure certificate authority|rsa data security, inc|verisign, inc|gte cybertrust root
+server-certs@thawte\.com|equifax secure certificate authority|rsa data security, inc|verisign, inc|gte cybertrust root|entrust\.net limited
