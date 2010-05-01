@@ -1,5 +1,5 @@
 # SMTP - Simple Mail Transfer Protocol (RFC 2821)  (See also RFC 1869)
-# Pattern quality: good
+# Pattern quality: great
 # usually runs on port 25
 # 
 # This pattern has been tested and is believed to work well.  If it does not

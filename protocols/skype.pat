@@ -1,5 +1,5 @@
 # Skype - UDP voice call (http://skype.com/)
-# Pattern quality: marginal
+# Pattern quality: ok
 #
 # By Myles Uyema <mylesuyema AT gmail.com>
 #

@@ -1,15 +1,13 @@
-This is a guide for writing patterns for l7-filter.  If you want a HOWTO
-for /using/ l7-filter, see http://l7-filter.sf.net/L7-HOWTO-Netfilter
+This is a guide for writing protocol definitions for l7-filter.  If you
+want a HOWTO for using l7-filter, see http://l7-filter.sf.net/L7-HOWTO-Netfilter
 
 *** File Format ***
-
-A pattern file consists of:
 
 - The name of the protocol on one line
 - A regular expression defining that protocol on one line
 
 Lines starting with '#', blank lines and any lines after the regular
-expression line are ignored.  
+expression line are ignored. 
 
 The name of the file must match the protocol defined in it.  i.e. if the
 protocol is "ftp", the file must be called "ftp.pat".
@@ -21,27 +19,26 @@ should look like this:
 # <Protocol name and some concise detail about the protocol>
 # Pattern quality: <great|good|ok|marginal|poor>
 
-In other words, the top line should start with "# " and then have a
-freeform string.  The next line should start with "# Pattern quality: "
-and then have one of "great", "good", "ok", "marginal" or "poor".
+"great", "good", "ok", "marginal", and "poor" are defined at
+http://l7-filter.sourceforge.net/protocols
 
 *** Regular Expressions ***
 
-l7-filter uses V8 regular expresions (see
-http://www.hmug.org/man/3/regsub.html) plus perl-style hex matching
-using \xHH notation (so to match a tab, use \x09).  This means that our
-regexps may be more limited than ones you are used to. Notably, you
-CANNOT use bounds ("foo{3}" to match foofoofoo), character classes
-("[[:punct:]]" to match any punctuation) or backreferences. 
+l7-filter uses V8 regular expresions (see, for instance,
+www.hmug.org/man/3/regsub.html) plus perl-style hex matching using \xHH
+notation (so to match a tab, use "\x09").  So our regexps may be more
+limited than ones you are used to. Notably, you CANNOT use bounds
+("foo{3}" to match foofoofoo), character classes ("[[:punct:]]" to match
+any punctuation) or backreferences. 
 
 l7-filter is case insensitive.  Using upper case in patterns is
 identical to using lower case.
 
-l7-filter strips out nulls (\x00 bytes) in the packets it reads (so that
-it can treat them as normal C strings).  So you can't match on nulls. 
-Also, fields may appear shorter than expected.  For example, if a
-protocol has a 4 byte field and any of those bytes can be null, the
-field can appear to be any length from 0 to 4.
+l7-filter strips out nulls (\x00 bytes) so that it can treat network
+data as normal C strings.  Thus, you can't match on nulls.  Also, fields
+may appear shorter than expected.  For example, if a protocol has a 4
+byte field and any of those bytes can be null, it can appear to be any
+length from 0 to 4.
 
 Useful things:
 
@@ -52,7 +49,7 @@ Useful things:
 *** What The Classifier Sees ***
 
 If you have set up your computer as recommended in the documentation
-(http://l7-filter.sf.net), the data to be matched is that of both the
+(see top of this file), the data to be matched is that of both the
 client and the server, in the order that it passes through the computer.
 For instance, in FTP, the first thing the filter sees is "221 server
 ready", then "USER bob", then "331 send password", then "PASS

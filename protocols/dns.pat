@@ -1,5 +1,5 @@
 # DNS - Domain Name System (RFC 1035)
-# Pattern quality: good
+# Pattern quality: great
 #
 # Please post to l7-filter-developers@lists.sf.net as to whether this pattern 
 # works for you or not.  If you believe it could be improved please post your 
