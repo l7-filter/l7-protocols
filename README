@@ -19,9 +19,6 @@ l7-filter Netfilter kernel patch.
 The patterns in the "protocols" directory are the mainstream ones.  They 
 match protocols like HTTP, FTP, eDonkey2000, Kazaa, and so on.
 
-"weakpatterns" contains patterns similar to the ones in "protocols", but
-that are, for whatever reason, not very good.  
-
 "extra" is for patterns of less general interest.
 
 "malware" contains patterns for viruses and worms.  

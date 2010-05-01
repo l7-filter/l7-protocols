@@ -3,6 +3,8 @@ Using these programs, you can:
 - test the speed of patterns in user space.
 - test whether your pattern matches random data (which is bad).
 
+Note that these are crude tests and that better ones could certainly be devised!
+
 Start by saying "make".
 
 ************************************************************************

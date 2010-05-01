@@ -1,14 +1,14 @@
-# Counter Strike - network game (versions 1.6 and "Source").
-# Pattern quality: good fast
+# Counterstrike (using the new "Source" engine) - network game 
+# Pattern quality: good veryfast
 #
-# by adam.randazzoATgmail.com
+# By adam.randazzoATgmail.com
 #
 # If you believe you can improve this pattern, please post to
 # l7-filter-developers@lists.sf.net .  You may subscribe to this list at
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
-counterstrike
-cstrikeCounter-Strike
+counterstrike-source
+^\xff\xff\xff\xff.*cstrikeCounter-Strike
 
 # These games use Steam, which is developed by Valve Software.
 #

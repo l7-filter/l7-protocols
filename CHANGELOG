@@ -1,3 +1,6 @@
+2005 05 25
+Improved counterstrike and renamed it counterstrike-source for clarity.
+
 2005 05 23
 Realizing that "\x7c" is treated _exactly_ like "|" (and so forth):
 \x7c --> \| in battlefield1942
