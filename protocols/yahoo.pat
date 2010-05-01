@@ -15,12 +15,13 @@ yahoo
 # are also possible, so let's allow those)
 # The next 7 bytes contain command (packet?) length and version information
 # which we won't currently try to match.
-# W means "encryption challenge command"
-# T means "login command"
+# L means "YAHOO_SERVICE_VERIFY" according to Ethereal
+# W means "encryption challenge command" (YAHOO_SERVICE_AUTH)
+# T means "login command" (YAHOO_SERVICE_AUTHRESP)
 # (there are others, i.e. 0x01 "coming online", 0x02 "going offline",
 # 0x04 "changing status to available", 0x06 "user message", but W and T
 # should appear in the first few packets.)
 # 0xC080 is the standard argument separator, it should appear not long
 # after the "type of command" byte.
 
-^(ymsg|ypns|yhoo).?.?.?.?.?.?.?[wt].*\xc0\x80
+^(ymsg|ypns|yhoo).?.?.?.?.?.?.?[lwt].*\xc0\x80
