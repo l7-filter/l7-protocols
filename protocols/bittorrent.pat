@@ -7,5 +7,8 @@
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 bittorrent
 
+# Does not attempt to match the HTTP download of the tracker
 # 0x13 is the length of "bittorrent protocol"
+# Second two bits match UDP wierdness, commented out until it's tested
+#^(\x13bittorrent protocol|d1:ad2:id20:|\x08'7P\)[RP])
 ^\x13bittorrent protocol

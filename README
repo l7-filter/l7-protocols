@@ -2,23 +2,15 @@
 
 These are patterns (protocol definitions) for the Linux layer 7 packet
 classifier (l7-filter).  To use them, you need the kernel and iptables
-patches available at http://sf.net/projects/l7-filter/
+patches available at http://sf.net/projects/l7-filter/ .  See the HOWTO.
 
 To install these patterns into their default location, say "make install".
-
-The HOWTO at http://l7-filter.sf.net explains how to use l7-filter.
-
-The HOWTO in this directory is a guide to writing patterns.
 
 For a nice way to view these patterns: http://l7-filter.sf.net/protocols
  
 More information on the patterns can be found at http://protocolinfo.org
-This is a wiki intended to make it easy for the community to pool its 
+This wiki is intended to make it easy for the community to pool its
 knowledge of how to identify network protocols.
-
-These patterns should be used only with version 0.4.0 or higher of the
-l7-filter Netfilter kernel patch.
-
 
 *** WHAT'S IN HERE? ***
 

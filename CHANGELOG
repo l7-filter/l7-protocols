@@ -1,3 +1,8 @@
+2005 08 XX
+Small improvements to napster (* --> +).
+Added UDP junk to bittorent, but commented out until it's confirmed.
+Added xunlei.
+
 2005 08 10
 Added soulseek. Noted that tsp can overmatch (saw it match soulseek).
 Cleaned up pattern file headers.
