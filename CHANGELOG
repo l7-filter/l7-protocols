@@ -1,3 +1,12 @@
+2006 10 18
+Added tor. Added more standard/proprietary/open_source groups, but moved
+all such groups to the ends of the lines because they are less relevant
+than others.
+
+2006 09 24
+Added stun.  Updated comments in msn-filetransfer and added an example to 
+back them up.  Added ares and stun to testing/data/.
+
 2006 09 10
 Added some protocol categories.  Added skypeout data.  Added mohaa (Medal of
 Honor Allied Assault).

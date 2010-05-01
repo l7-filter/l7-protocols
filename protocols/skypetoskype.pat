@@ -1,6 +1,6 @@
 # Skype to Skype - UDP voice call (program to program) - http://skype.com
 # Pattern attributes: ok veryfast overmatch
-# Protocol groups: proprietary voip p2p
+# Protocol groups: voip p2p proprietary
 # Wiki: http://www.protocolinfo.org/wiki/Skype
 
 # This matches at least some of the general chatter that occurs when the

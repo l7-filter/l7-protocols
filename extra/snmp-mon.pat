@@ -1,6 +1,6 @@
 # SNMP Monitoring - Simple Network Management Protocol (RFC1157)
 # Pattern attributes: good veryfast subset
-# Protocol groups: ietf_internet_standard networking
+# Protocol groups: networking ietf_internet_standard
 # Wiki: http://en.wikipedia.org/wiki/SNMP
 #
 # Usually runs on UDP ports 161

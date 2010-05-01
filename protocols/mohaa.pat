@@ -1,6 +1,6 @@
 # Medal of Honor Allied Assault - an Electronic Arts game
-# Pattern attributes: good
-# Protocol groups: proprietary game
+# Pattern attributes: good veryfast
+# Protocol groups: game proprietary
 # Wiki: http://www.protocolinfo.org/wiki/Medal_of_Honor_Allied_Assault
 #
 # This pattern is written and tested by Krzysztof Maciejewski.

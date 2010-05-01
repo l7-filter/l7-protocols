@@ -1,6 +1,6 @@
 # Whois - query/response system, usually used for domain name info - RFC 3912
 # Pattern attributes: good fast overmatch
-# Protocol groups: ietf_draft_standard networking
+# Protocol groups: networking ietf_draft_standard
 # Wiki: http://www.protocolinfo.org/wiki/Whois
 #
 # Usually runs on TCP port 43

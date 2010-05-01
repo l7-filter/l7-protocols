@@ -1,6 +1,6 @@
 # TSP - Berkely UNIX Time Synchronization Protocol
 # Pattern attributes: good veryfast overmatch
-# Protocol groups: time_synchronization
+# Protocol groups: time_synchronization open_source
 # Wiki: http://www.protocolinfo.org/wiki/TSP
 #
 # http://ftp.svbug.com/ftp/pub/manuals/pdf/smm.22.timed.pdf

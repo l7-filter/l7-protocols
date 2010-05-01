@@ -50,3 +50,8 @@ denotes which session the capture is from if there are several.  The
 number denotes how many packets the file contains.  (To simulate what
 l7-filter sees, the first file has only the first packet, the second has
 the first two packets, and so on.)
+
+(The ares data is a bit of a cheat.  I let these files sit around for a
+long time before putting them here, so I'm not sure what they are
+exactly, except that they are Ares data and they clearly aren't in the
+1, 1-2, 1-2-3 form described above.)

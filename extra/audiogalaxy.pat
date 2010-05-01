@@ -1,6 +1,6 @@
 # Audiogalaxy - (defunct) Peer to Peer filesharing
 # Pattern attributes: ok veryfast
-# Protocol groups: obsolete p2p
+# Protocol groups: p2p obsolete
 # Wiki: http://protocolinfo.org/wiki/Audiogalaxy
 #
 # http://www.movspclr.co.uk/info/agprotocol.html
