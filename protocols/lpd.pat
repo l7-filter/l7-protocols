@@ -1,6 +1,6 @@
 # LPD - Line Printer Daemon Protocol (old-style UNIX printing) - RFC 1179
 # Pattern attributes: ok veryfast
-# Protocol groups: ietf_rfc_documented
+# Protocol groups: ietf_rfc_documented printer
 # Wiki: http://www.protocolinfo.org/wiki/LPD
 #
 # This pattern is untested.

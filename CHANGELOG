@@ -1,3 +1,7 @@
+2006 09 10
+Added some protocol categories.  Added skypeout data.  Added mohaa (Medal of
+Honor Allied Assault).
+
 2006 06 03
 Improved "lime" packet detection in gnutella.  Fixed and/or tested
 skypeout and skypetoskype, they now both work, at least with Skype

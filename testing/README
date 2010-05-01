@@ -37,3 +37,16 @@ To test whether your pattern matches random data, run
 ./test_match.sh foo.pat
 or
 ./test_match.sh 'foo|bar'
+
+
+***********************************************************************
+
+___DEVELOPER INFORMATION___
+
+The data directory holds packet captures to test against.  The file name
+format is: [protocol]-[optional letter]-[number].  The protocol is the
+protocol and possibly some information about the situation.  The letter
+denotes which session the capture is from if there are several.  The
+number denotes how many packets the file contains.  (To simulate what
+l7-filter sees, the first file has only the first packet, the second has
+the first two packets, and so on.)
