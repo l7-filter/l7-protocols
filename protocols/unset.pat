@@ -1,6 +1,6 @@
-# Testing - Dummy pattern for new unmatched connections.
+# Unset - Dummy pattern for unmatched connections that are still being tested
 
-testing
+unset
 # This pattern is ignored by the kernel.  It sees that the "protocol" is
 # "testing" and always returns matched for connections that are still
 # being tested.
