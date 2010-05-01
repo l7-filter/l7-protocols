@@ -1,3 +1,12 @@
+2005 01 29
+Improved ssh, it now matches both v1 and v2.
+
+Improved and tested fasttrack.  It was overmatching in some cases, now
+it isn't.
+
+Moved audiogalaxy to extra/ as, from what I can tell, no one uses it (the 
+program) anymore.
+
 2005 01 20
 - gnutella now matches UDP Gnutella packets as well as TCP.  
 - Removed bearshare and winmx (just use gnutella).  
@@ -6,6 +15,7 @@
 - Fixed httpaudio, httpvideo, httpcachehit and httpcachemiss, which were
 all missing a [\x09-\x0d ].
 - Added ssdp.
+- Improved shoutcast.  Now matches Icecast too.
 
 2005 01 17
 Fixed http-itunes and battlefield1942 (file names didn't match protocol 
