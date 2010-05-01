@@ -43,7 +43,7 @@ Legion
 Chat:
 Gadu-gadu - a popular Polish instant messenger protocol
 Zephyr
-Chikka/SMS/SMPP
+SMS/SMPP
 
 VoIP:
 GameComm - http://www.gamecomm.com/
@@ -65,5 +65,5 @@ NFS - Network File System
 RTCP - Real-time control protocol
 RTP - Real-time protocol
 SunRPC - Sun's Remote Procedure Calls
-XDMCP - X-Windows Display Manager
+XDMCP - X-Windows Display Manager Control Protocol
 pcAnywhere - remote desktop
