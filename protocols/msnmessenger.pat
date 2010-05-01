@@ -12,4 +12,4 @@
 msnmessenger
 # ver: allow versions up to 99.
 # usr (in case ver didn't work):  
-^(ver [0-9]+ msnp[1-9][0-9]? [\x09-\0d -~]* cvr|usr md5 i [ -~]*)
+^(ver [0-9]+ msnp[1-9][0-9]? [\x09-\x0d -~]* cvr|usr md5 i [ -~]*)

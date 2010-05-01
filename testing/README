@@ -20,7 +20,8 @@ Or to test the pattern "foo|bar":
 You'll find that our regexp library has some performance quirks.  For
 instance, branches are very expensive.  Testing for "foo|bar" takes MUCH
 longer than twice as long as testing for "foo".  Also, parentheses aren't 
-optimized out.  That is, "(foo)" takes MUCH longer than "foo".
+optimized out.  That is, "(foo)" takes MUCH longer than "foo".  And
+"^(foo|bar)" is much faster than "^foo|^bar".
 
 To test all patterns, run "./test_all.pat".
 

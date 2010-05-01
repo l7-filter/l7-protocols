@@ -1,5 +1,5 @@
 # IRC - Internet Relay Chat - RFC 1459
-# Pattern quality: good notsofast
+# Pattern quality: good veryfast
 #
 # Usually runs on port 6666 or 6667
 # Note that chat traffic runs on these ports, but IRC-DCC traffic (which
@@ -16,5 +16,5 @@ irc
 # First thing that happens is that the client sends NICK and USER, in 
 # either order.
 # I'd rather this were less inclusive...
-^nick[\x09-\x0d -~]*user[\x09-\x0d -~]*:|^user[\x09-\x0d -~]*:[\x09-\x0d -~]*nick[\x09-\x0d -~]*\x0d\x0a
+^(nick[\x09-\x0d -~]*user[\x09-\x0d -~]*:|user[\x09-\x0d -~]*:[\x09-\x0d -~]*nick[\x09-\x0d -~]*\x0d\x0a)
 
