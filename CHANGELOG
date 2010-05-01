@@ -1,5 +1,8 @@
+2005 09 12
+Improved xunlei, applejuice, http.
+
 2005 09 05
-Added citrix, whois.
+Added citrix, whois.  Added x11 data for testing.
 
 2005 09 03
 irc now allows MIRC color codes. Fixed commented out dns and nntp
