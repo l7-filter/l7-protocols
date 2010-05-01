@@ -2,7 +2,7 @@
 # Pattern quality: good
 # Usually runs on port 80
 #
-# Contributed by Francesco Del Degan <fdeldegan@libero.it>
+# Contributed by Francesco Del Degan <fdeldegan AT libero.it>
 #
 # This pattern has been tested and is believed to work well.  If it does not
 # work for you, or you believe it could be improved, please post to 

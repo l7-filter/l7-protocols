@@ -8,7 +8,7 @@
 # suggestions to that list as well. You may subscribe to this list at 
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
-# Thanks to Matt Skidmore <fox@woozle.org>
+# Thanks to Matt Skidmore <fox AT woozle.org>
 
 edonkey
 

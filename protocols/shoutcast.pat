@@ -2,7 +2,7 @@
 # Pattern quality: ok
 # usually runs on port 80
 #
-# Pattern contributed by Deepak Seshadri <dseshadri@broadbandmaritime.com>
+# Pattern contributed by Deepak Seshadri <dseshadri AT broadbandmaritime.com>
 # who says "The difference between [Shoutcast and Icecast] is not
 # clearly mentioned anywhere. According to this document, my pattern
 # would filter JUST shoutcast packets.

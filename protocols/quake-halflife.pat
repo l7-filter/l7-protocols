@@ -5,7 +5,7 @@
 # Quake 3 (1.32), and Half-life (1.1.1.0). But may also work on other
 # games based on the Quake engine.
 #
-# Contributed by Laurens Blankers <laurens@blankersfamily.com>
+# Contributed by Laurens Blankers <laurens AT blankersfamily.com>
 #
 # Please post to l7-filter-developers@lists.sf.net as to whether it works
 # for you or not.  If you believe it could be improved please post your

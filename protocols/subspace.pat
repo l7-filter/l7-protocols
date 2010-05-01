@@ -1,7 +1,7 @@
 # Subspace - 2D asteroids-style multiplayer space game (http://subspacehq.com)
 # Pattern quality: marginal
 #
-# By Myles Uyema <mylesuyema@gmail.com>
+# By Myles Uyema <mylesuyema AT gmail.com>
 #
 # This pattern matches the initial 2 packets of the client-server
 # 'handshake' when joining a Zone.

@@ -1,6 +1,8 @@
 # Battlefield 1942 - An EA game
 # Pattern quality: ok
 #
+# Contributed by Myles Uyema <mylesuyema AT gmail.com>
+#
 # This pattern has only been tested by one person.
 # Please post to l7-filter-developers@lists.sf.net as to whether it works
 # for you or not.  If you believe it could be improved please post your

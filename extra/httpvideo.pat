@@ -2,7 +2,7 @@
 # Pattern quality: good
 # Usually runs on port 80
 #
-# Contributed by Deepak Seshadri <dseshadri@broadbandmaritime.com>
+# Contributed by Deepak Seshadri <dseshadri AT broadbandmaritime.com>
 #
 # This pattern has been tested and is believed to work well.  If it does not
 # work for you, or you believe it could be improved, please post to 

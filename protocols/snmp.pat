@@ -7,7 +7,7 @@
 # However these could still be matched by other protocols that 
 # use ASN.1 encoding
 
-# Contributed by Goli SriSairam <goli_sai@yahoo.com>
+# Contributed by Goli SriSairam <goli_sai AT yahoo.com>
 
 # This pattern has been tested and is believed to work well.  If it does not
 # work for you, or you believe it could be improved, please post to 

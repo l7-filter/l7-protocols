@@ -8,7 +8,7 @@
 # please also post to that list. You may subscribe at
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 #
-# Thanks to Trevor Paskett <tpaskett@cymphonix.com> for this pattern.
+# Thanks to Trevor Paskett <tpaskett AT cymphonix.com> for this pattern.
 
 vnc
 # Assumes single digit major and minor version numbers 

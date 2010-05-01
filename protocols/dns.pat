@@ -6,7 +6,8 @@
 # suggestions to that list as well. You may subscribe to this list at 
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
-# Thanks to Sebastien Bechet <s.bechet@av7.net> for TLD detection improvements
+# Thanks to Sebastien Bechet <s.bechet AT av7.net> for TLD detection 
+# improvements
 
 # While RFC 2181 says "Occasionally it is assumed that the Domain Name
 # System serves only the purpose of mapping Internet host names to data,

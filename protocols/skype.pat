@@ -1,7 +1,7 @@
 # Skype - UDP voice call (http://skype.com/)
 # Pattern quality: marginal
 #
-# By Myles Uyema <mylesuyema@gmail.com>
+# By Myles Uyema <mylesuyema AT gmail.com>
 #
 # The 0d 6b pattern matches SkypeOut calls to real phone numbers
 # The 0d 01 pattern matches Skype-to-Skype voice calls
