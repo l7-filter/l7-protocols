@@ -11,7 +11,7 @@ The HOWTO at http://l7-filter.sf.net explains how to use l7-filter.
 The HOWTO in this directory is a guide to writing patterns.
 
 These patterns should be used only with version 0.4.0 or higher of the
-Netfilter kernel patch.
+l7-filter Netfilter kernel patch.
 
 
 *** WHAT'S IN HERE? ***
@@ -35,10 +35,9 @@ accuracy of the patterns.
 *** CAN I HELP? ***
 
 Please report your experience with l7-filter and these patterns to
-l7-filter-developers@lists.sf.net .  You may subscribe to this list at
-http://lists.sourceforge.net/lists/listinfo/l7-filter-developers 
-You can also e-mail Matthew Strait, the primary maintainer, directly at
-quadong@users.sf.net
+l7-filter-developers@lists.sf.net .  (Subscribe at
+http://lists.sourceforge.net/lists/listinfo/l7-filter-developers ) 
+You can also e-mail Matthew Strait directly at quadong@users.sf.net
 
 Please note that many of these patterns were NOT written by experts.  So
 if you think a pattern is broken and you know better, you may be right! 
