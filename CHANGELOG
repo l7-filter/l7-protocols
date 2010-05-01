@@ -1,3 +1,8 @@
+2005 07 17
+Changed license to dual GPL/CC, since we're using CC on protocolinfo.org.
+Changed skypeout pattern to the scary long one, because the old one just
+doesn't work.  Added battlefield2.  Added protocolinfo advertisements.
+
 2005 06 17
 Added freenet pattern.  Commented out old pattern in ares.  Fixed minor
 typo in edonkey pattern.

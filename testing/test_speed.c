@@ -91,9 +91,9 @@ int main(int argc, char ** argv)
 		else if (!c)
 			printf("(doesn't match)\n");
 
-		if(c%(TIMES/72) == 0)
+		if(c%(TIMES/70) == 0)
 		{
-			printf("%c..", (char)8);
+			printf(".");
 			fflush(stdout);
 		}
 	}

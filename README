@@ -12,6 +12,10 @@ The HOWTO in this directory is a guide to writing patterns.
 
 For a nice way to view these patterns: http://l7-filter.sf.net/protocols
  
+More information on the patterns can be found at http://protocolinfo.org
+This is a wiki intended to make it easy for the community to pool its 
+knowledge of how to identify network protocols.
+
 These patterns should be used only with version 0.4.0 or higher of the
 l7-filter Netfilter kernel patch.
 
@@ -27,13 +31,12 @@ match protocols like HTTP, FTP, eDonkey2000, Kazaa, and so on.
 
 "file_types" contains patterns for file types.
 
-The "testing" directory contains a program for testing the speed and
-accuracy of the patterns.
+"testing" contains programs for testing the speed & accuracy of the patterns.
 
 
 *** CAN I HELP? ***
 
-Please report your experience with l7-filter and these patterns to
+Please report your experience with these patterns to
 l7-filter-developers@lists.sf.net .  (Subscribe at
 http://lists.sourceforge.net/lists/listinfo/l7-filter-developers ) 
 You can also e-mail Matthew Strait directly at quadong AT users.sf.net

@@ -1,9 +1,12 @@
 Please read HOWTO for information on writing patterns.  Here are some
 patterns we'd like to have:
 
+Citrix - http://citrix.com
+SAP
+Freenet - Anonymous filesharing
+Kademlia - Filesharing
 Gadu-gadu - a popular Polish instant messenger protocol (so I'm told)
 Zephyr - an instant messanger
-Citrix - http://citrix.com
 
 The below is taken from the list of protocols supported by the
 Packeteer, a commercial packet shaper (see pg 197 of
@@ -11,7 +14,6 @@ www.packeteer.com/support/resources/41.refguide.pdf). Some of these are
 important, but many are probably used so infrequently that they are not
 really worth writing patterns for...
  
-ActiveX		Microsoft's object-oriented program technologies and tools
 AFP		AppleTalk Filing Protocol (AppleShare IP)
 Baan 		Baan enterprise management system
 BackWeb(Polite)	Push technology Polite BackWeb
