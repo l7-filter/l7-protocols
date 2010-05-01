@@ -35,7 +35,7 @@ if [ $3 ]; then
 	times=$3
 else
 	times=500
-	echo Checking against 500 randomly generated strings.
+	echo Doing 500 repetitions of each test.
 	echo You can change this by giving a number as the third arg.
 fi
 

@@ -16,7 +16,7 @@ using namespace std;
 #include <fstream>
 #include <iostream>
 #include <sys/types.h>
-#include "../../hey/userspace/l7-parse-patterns.h"
+#include "l7-parse-patterns.h"
 
 #define MAX 1500
 
@@ -100,6 +100,7 @@ void handle_cmdline(string & filename, int * nexecs, int * verbose,
 	int argc, char ** argv)
 {
 	const char * opts = "f:vh?n:";
+	*verbose = 0;
 
 	int done = 0, gotfilename = 0;
 	while(!done)
@@ -117,7 +118,7 @@ void handle_cmdline(string & filename, int * nexecs, int * verbose,
 			break;
 
 			case 'v':
-			*verbose = 1;
+			(*verbose)++;
 			break;
 
 			case 'n':
@@ -131,7 +132,7 @@ void handle_cmdline(string & filename, int * nexecs, int * verbose,
 			case 'h':
 			case '?':
 			default:
-			printf("Usage: test_speed-userspace -f proto.pat [-v] [-n reps]\n");
+			printf("Usage: test_speed-userspace -f proto.pat [-v] [-v] [-n reps]\n");
 			exit(0);
 			break;
 		}
@@ -154,13 +155,19 @@ int main(int argc, char ** argv)
 
 	handle_cmdline(filename, &nexecs, &verbose, argc, argv);
 
-	if(!parse_pattern_file(cflags, eflags, patternstring,filename))
+	if(!parse_pattern_file(cflags, eflags, patternstring, filename))
 	{
 		cerr << "Failed to get pattern from file\n";
 		exit(1);
 	}
 
+	if(verbose >= 2) 
+		cout << "Pattern before pre_process: " << patternstring << endl;
+
 	pre_process(patternstring); /* do \xHH escapes */
+
+	if(verbose >= 2)
+		cout << "Pattern after pre_process:  " << patternstring << endl;
 
 	if(regcomp(&patterncomp, patternstring.c_str(), cflags)){
 		fprintf(stderr, "error compiling regexp\n");
