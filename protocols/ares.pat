@@ -6,9 +6,9 @@
 # sufficient for blocking, but not for shaping, since it doesn't catch
 # the actual file transfers (see below).
 
-# Pattern by Brandon Enright <bmenrigh at the server known as ucsd.edu>
+# Original pattern by Brandon Enright <bmenrigh at the server known as ucsd.edu>
 
-# This pattern has been tested.
+# This pattern has been tested with Ares 1.8.8.2998.
 
 # To get or provide more information about this protocol and/or pattern:
 # http://www.protocolinfo.org/wiki/Ares

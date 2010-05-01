@@ -1,3 +1,11 @@
+2006 01 XX
+Modified dns and unknown so that they do not generate warnings about having
+control characters or nulls in hex.
+Improved dns.  Now it matches XXX.XXX.XXX.XXX.in-addr.arpa lookups and IPv6
+queries.
+Added thecircle.
+Updated msnmessenger to handle MSN Messenger 7.5's HTTP encapsulation.
+
 2006 01 17
 Improved msnmessenger pattern slightly.  (I don't think it was causing
 any problems, but it wasn't set up to catch connections that only
