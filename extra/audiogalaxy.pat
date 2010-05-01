@@ -1,5 +1,5 @@
 # Audiogalaxy - (defunct) Peer to Peer filesharing
-# Pattern quality: ok
+# Pattern quality: ok veryfast
 #
 # http://www.movspclr.co.uk/info/agprotocol.html
 #

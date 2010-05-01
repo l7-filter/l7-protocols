@@ -1,5 +1,5 @@
 # Bittorrent - http://sourceforge.net/projects/bittorrent/
-# Pattern quality: great
+# Pattern quality: great veryfast
 #
 # This pattern has been tested and is believed to work well.  If it does not
 # work for you, or you believe it could be improved, please post to 

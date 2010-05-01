@@ -1,5 +1,5 @@
 # Tesla Advanced Communication - P2P file sharing (?)
-# Pattern quality: marginal
+# Pattern quality: marginal notsofast
 #
 # This pattern is untested!
 # Please report on how this pattern works for you at

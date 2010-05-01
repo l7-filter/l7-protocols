@@ -1,5 +1,5 @@
 # Battlefield 1942 - An EA game
-# Pattern quality: ok
+# Pattern quality: ok notsofast
 #
 # Contributed by Myles Uyema <mylesuyema AT gmail.com>
 #

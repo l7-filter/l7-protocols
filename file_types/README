@@ -55,9 +55,5 @@ So what's the solution?  Well, you can do this instead:
 some extra magic is needed there.)
 
 Or perhaps you could use IMQ to create several unrelated regions of
-classification.  i.e.  On ingress, classify and shape on protocol and on
-egress, classify and shape on file type.  I haven't tried this. Note
-that people trying to use the (deprecated) QoS version of l7-filter with
-IMQ have reported problems.  It should probaby work for the Netfilter
-version.
-
+classification.  i.e. On ingress, classify and shape on protocol
+and on egress, classify and shape on file type.  I haven't tried this.

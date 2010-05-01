@@ -1,5 +1,5 @@
 # Quicktime HTTP 
-# Pattern quality: good
+# Pattern quality: good fast
 #
 # This pattern has been tested and is believed to work well.  
 # (Quick Time v6.5.1 downloading from www.apple.com/trailers) If it does not

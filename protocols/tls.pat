@@ -1,5 +1,5 @@
 # TLS - Transport Layer Security - RFC 2246
-# Pattern quality: good
+# Pattern quality: good veryfast
 # Usually runs on port 443
 #
 # This pattern has been tested and is believed to work well.  If it does not

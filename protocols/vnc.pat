@@ -1,5 +1,5 @@
 # VNC - Virtual Network Computing.  Also known as RFB - Remote Frame Buffer
-# Pattern quality: good
+# Pattern quality: good veryfast
 # http://www.realvnc.com/documentation.html
 # 
 # This pattern has been verified with vnc v3.3.7 on WinXP and Linux

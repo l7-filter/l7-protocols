@@ -1,5 +1,5 @@
 # IRC - Internet Relay Chat - RFC 1459
-# Pattern quality: good
+# Pattern quality: good notsofast
 #
 # Usually runs on port 6666 or 6667
 # Note that chat traffic runs on these ports, but IRC-DCC traffic (which

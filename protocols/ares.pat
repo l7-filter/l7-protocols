@@ -1,5 +1,5 @@
 # Ares - A P2P program - http://www.aresgalaxy.org/
-# Pattern quality: undermatch good
+# Pattern quality: good veryfast undermatch
 
 # This pattern catches only client-server connect messages.  This is
 # sufficient for blocking, but not for shaping, since it doesn't catch 

@@ -8,8 +8,8 @@ Citrix - http://citrix.com
 The below is taken from the list of protocols supported by the
 Packeteer, a commercial packet shaper (see pg 197 of
 www.packeteer.com/support/resources/41.refguide.pdf). Some of these are
-important, and many are (I think!) used so infrequently that they are
-not really worth writing patterns for...
+important, and many are probably used so infrequently that they are not
+really worth writing patterns for...
  
 ActiveX		Microsoft's object-oriented program technologies and tools
 AFP		AppleTalk Filing Protocol (AppleShare IP)
@@ -25,7 +25,7 @@ Clarent-Voice-S	Clarent voice traffic (simple)
 CORBA		CORBA Internet Inter-ORB Protocol (IIOP)
 CRS		MS Content Repl. Service & Dist. Passwd Auth (Membership Broker)
 CU-Dev		Fujitsu Device Control (CU-DEV on TCP/IP)
-CUSeeMe		Internet telephone application service group
+CUSeeMe		Internet telephone application
 DCOM		Microsoft Distributed Component Object Model
 DECnet		Digital Equipment Corporation's network protocol
 DLS		SNA/FNA over TCP-Data Link Switch traffic
@@ -49,8 +49,8 @@ LotusNotes	Groupware for collaborative communication
 Marimba		Marimba's Castanet push technology
 Micom-VIP	Micom Voice over IP (V/IP)
 MSSQ		Microsoft Message Queue Traffic
-MS-SQL		Service group for both Microsoft SQL Mon and Server traffic
-NetBEUI		Service group for NetBEUI--Network protocol for PCs
+MS-SQL		Microsoft SQL Mon and Server traffic
+NetBEUI		NetBEUI--Network protocol for PCs
 NFS		Network File System (both TCP and UDP)
 NTP		Network Time Protocol
 OpenConnect-JCP Browser-based access to host applications
@@ -60,9 +60,9 @@ OSPF		Network Routing Information (Open Shortest-Path First)
 pcAnywhere	Remote management collaboration tool
 PIM		Protocol-Independent Multicast Routing Protocol
 PointCast	Push technology application
-RADIUS		Service group for Remote Authentication Dial-in Service
+RADIUS		Remote Authentication Dial-in Service
 RC5DES		DES (data encryption standard) encryption-cracking application
-RealAudio	Service group for RealAudio streaming audio/video app-TCP/UDP
+RealAudio	RealAudio streaming audio/video app-TCP/UDP (done?)
 REXEC		UNIX remote execution protocol
 RIP		Routing Information Protocol (UDP)
 RTCP-B		Real-time control protocol
@@ -77,10 +77,10 @@ SunRPC		Sun's Remote Procedure Calls (UDP)
 Syslog		UNIX System Logging
 T.120		Collaboration application
 TACACS		Login host protocol
-Timbuktu	Timbuktu Pro service group; networked remote control application
+Timbuktu	Timbuktu Pro; networked remote control application
 TN3287		IBM 3270 print traffic (TN3287 extensions)
 UUCP		Unix-to-Unix Copy Protocol
-VDOPhone	Service group for telephone application (not auto-discovered)
+VDOPhone	Telephone application
 WindowsMedia	Microsoft Windows Media Player Streaming
 WINS		Windows Internet Name Service
 XWindows-DM	XWindows Display Manager (XDMCP)

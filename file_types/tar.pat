@@ -1,5 +1,5 @@
 # Tar - tape archive.  Standard UNIX file archiver, not just for tapes.
-# Pattern quality: good
+# Pattern quality: good fast
 # 
 # If this pattern does not
 # work for you, or you believe it could be improved, please post to 

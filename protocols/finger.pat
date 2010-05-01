@@ -1,5 +1,5 @@
 # Finger - User information server - RFC 1288
-# Pattern quality: undermatch overmatch good
+# Pattern quality: good notsofast undermatch overmatch
 # Usually runs on port 79
 #
 # This pattern is lightly tested.  If it does not

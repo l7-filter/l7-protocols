@@ -1,5 +1,5 @@
 # NetBIOS - Network Basic Input Output System
-# Pattern quality: marginal
+# Pattern quality: marginal fast
 #
 # As mentioned in smb.pat:
 #

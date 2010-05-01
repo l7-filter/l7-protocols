@@ -1,5 +1,5 @@
 # HTTP - Audio over HyperText Transfer Protocol (RFC 2616)
-# Pattern quality: good
+# Pattern quality: good fast
 # Usually runs on port 80
 #
 # Contributed by Deepak Seshadri <dseshadri AT broadbandmaritime.com>

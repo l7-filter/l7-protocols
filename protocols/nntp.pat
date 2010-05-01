@@ -1,5 +1,5 @@
 # NNTP - Network News Transfer Protocol (RFC 977, 2980)
-# Pattern quality: good
+# Pattern quality: good veryfast
 # usually runs on port 119
 
 # This pattern is tested and is believed to work well (but could use

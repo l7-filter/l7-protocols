@@ -1,5 +1,5 @@
 # FTP - File Transfer Protocol (RFC 959)
-# Pattern quality: great
+# Pattern quality: great veryfast
 #
 # Usually runs on port 21.  Note that the data stream is on a dynamically
 # assigned port, which means that you will need the FTP connection 

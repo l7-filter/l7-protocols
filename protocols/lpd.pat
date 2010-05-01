@@ -1,5 +1,5 @@
 # LPD - Line Printer Daemon Protocol - RFC 1179 - old-style UNIX printing
-# Pattern quality: ok
+# Pattern quality: ok veryfast
 #
 # This pattern is untested.  If it does not work for you, or you believe
 # it could be improved, please post to l7-filter-developers@lists.sf.net

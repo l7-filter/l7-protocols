@@ -1,5 +1,5 @@
 # Quake 2, Quake 3, Quake World, Half Life - popular computer games.
-# Pattern quality: good
+# Pattern quality: good veryfast
 #
 # This pattern has been tested with QuakeWorld (2.30), Quake 2 (3.20), 
 # Quake 3 (1.32), and Half-life (1.1.1.0). But may also work on other

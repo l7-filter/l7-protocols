@@ -1,5 +1,5 @@
 # (X)HTML - (Extensible) Hypertext Markup Language - http://w3.org
-# Pattern quality: good
+# Pattern quality: good fast
 # 
 # This pattern has been tested and is believe to work well.  If it does not
 # work for you, or you believe it could be improved, please post to 

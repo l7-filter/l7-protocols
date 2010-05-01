@@ -1,5 +1,5 @@
 # HTTP - Proxy Cache hit for HyperText Transfer Protocol (RFC 2616)
-# Pattern quality: good
+# Pattern quality: good fast
 # Usually runs on port 80
 #
 # Contributed by Francesco Del Degan <fdeldegan AT libero.it>

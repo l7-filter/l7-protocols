@@ -1,5 +1,5 @@
 # Valid certificate SSL - Anything tunneled through SSL (i.e. HTTPS, IMAPS) 
-# Pattern quality: good
+# Pattern quality: good notsofast
 
 # This matches anything claiming to use a valid certificate from a well 
 # known certificate authority.

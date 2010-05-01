@@ -1,3 +1,8 @@
+2005 05 18
+Updated skype (split into skypeout and skypetoskype), counterstrike and
+flash.  gnutella should now match gnutella 2.  Added zip, rar and exe. 
+Fixed typo: rstp --> rtsp.
+
 2005 04 29
 Reorganization.  No functional changes.
 

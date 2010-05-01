@@ -1,5 +1,5 @@
 # POCO and PPµ„µ„Õ® - Chinese P2P - www.pp365.com www.poco.cn
-# Pattern quality: ok
+# Pattern quality: ok veryfast
 #
 # The author of this pattern says it works, but this is unconfirmed. If
 # this pattern does not work for you, or you believe it could be

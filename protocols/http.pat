@@ -1,5 +1,5 @@
 # HTTP - HyperText Transfer Protocol (RFC 2616)
-# Pattern quality: great
+# Pattern quality: great notsofast
 # Usually runs on port 80
 #
 # This pattern has been tested and is believed to work well.  If it does not

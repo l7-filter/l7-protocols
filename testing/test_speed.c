@@ -3,7 +3,8 @@
 #include "regexp/regexp.c"
 
 #define MAX 1500
-#define TIMES 10000
+#define TIMES 100000
+
 
 static int hex2dec(char c)
 {
@@ -96,5 +97,4 @@ int main(int argc, char ** argv)
 	puts("\n");
 
 	return 0;
-
 }

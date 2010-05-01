@@ -1,5 +1,5 @@
 # pressplay - A legal music distribution site (http://pressplay.com)
-# Pattern quality: ok
+# Pattern quality: ok fast
 #
 # This pattern was "contributed" (taken with permission) by the bandwidth 
 # arbitrator project (www.bandwidtharbitrator.com).

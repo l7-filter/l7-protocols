@@ -9,17 +9,19 @@ want a HOWTO for using l7-filter, see http://l7-filter.sf.net/L7-HOWTO-Netfilter
 Lines starting with '#', blank lines and any lines after the regular
 expression line are ignored. 
 
-The name of the file must match the protocol defined in it.  i.e. if the
-protocol is "ftp", the file must be called "ftp.pat".
+The name of the file must match the protocol defined in it.  (e.g. if the
+protocol is "ftp", the file must be called "ftp.pat".)
 
 Additionally, pattern files that are part of the official distribution
 need some metadata at the top for display on the webpage. The top lines
 should look like this:
 
 # <Protocol name and some concise detail about the protocol>
-# Pattern quality: <great|good|ok|marginal|poor>
+# Pattern quality: [keyword]*
 
-"great", "good", "ok", "marginal", and "poor" are defined at
+Where "keyword" is any of "undermatch" "overmatch" "great" "good" "ok"
+"marginal" "poor" "veryfast" "fast" "nosofast" "slow".  Any number of
+keywords may be used. These words are defined in
 http://l7-filter.sourceforge.net/protocols
 
 *** Regular Expressions ***
@@ -28,8 +30,7 @@ l7-filter uses V8 regular expresions (see, for instance,
 www.hmug.org/man/3/regsub.html) plus perl-style hex matching using \xHH
 notation (so to match a tab, use "\x09").  So our regexps may be more
 limited than ones you are used to. Notably, you CANNOT use bounds
-("foo{3}" to match foofoofoo), character classes ("[[:punct:]]" to match
-any punctuation) or backreferences. 
+("foo{3}"), character classes ("[[:punct:]]") or backreferences. 
 
 l7-filter is case insensitive.  Using upper case in patterns is
 identical to using lower case.
