@@ -1,3 +1,9 @@
+2004 11 28
+Added ^ to h323.
+
+2004 11 22
+Changed a \x18 to a . in h323.
+
 2004 10 29
 Removed "range: bytes=" from openft.  This caused false positives.
 Added a cert authority to validcertssl and changed a . to a \.
