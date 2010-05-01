@@ -1,5 +1,5 @@
 # Skype - UDP voice call (http://skype.com/)
-# Pattern quality: ok
+# Pattern quality: undermatch ok
 #
 # By Myles Uyema <mylesuyema AT gmail.com>
 #

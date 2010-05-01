@@ -1,5 +1,5 @@
 # Gopher - A precursor to HTTP (RFC 1436)
-# Pattern quality: good
+# Pattern quality: undermatch good
 # Usually runs on port 70
 #
 # This pattern is untested.  If it does not
@@ -19,7 +19,7 @@ gopher
 # i.e. "0About internet Gopher\tStuff:About us\trawBits.micro.umn.edu\t70"
 # [1-9,\+TgI].*\x09.*\x09.*[a-z].*\..*[a-z][a-z]\x09[1-9]
 
-# the above is very very VERY slow with our current regexp implmentation
-# this one won't bring your machine down, but is still at least an order
+# The above is very very VERY slow with our current regexp implementation.
+# This one won't bring your machine down, but is still at least an order
 # of magnitude slower than any other pattern:
 [1-9,\+TgI][\x09-\x0d -~]*\x09[\x09-\x0d -~]*\x09[a-z0-9\.]*\.[a-z][a-z].?.?\x09[1-9]
