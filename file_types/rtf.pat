@@ -3,4 +3,5 @@
 # Protocol groups: file
 
 rtf
+# This is not a valid GNU extended regular expression
 {\\rtf[12]

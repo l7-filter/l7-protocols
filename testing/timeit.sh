@@ -23,26 +23,41 @@ add()
 extract()
 {
 	if [ -r $1 ] && [ -f $1 ]; then
-#		echo Interpreting argument as a file name... > /dev/stderr
 		cat $1 | grep -v ^$ | grep -v ^# | tail -1
 	else
 		echo > /dev/stderr
-		echo Argument is not a readable file, so interpreting it as a regexp string... > /dev/stderr
+		echo Arg is not a readable file, so assuming it is a regexp. > /dev/stderr
 		echo $1
 	fi
 }
 
-if [ ! $2 ]; then
-	echo Syntax: ./timeit.sh patternfile all\|print\|real [data_files]
+if [ ! $3 ] || [ $2 == "-h" ] || [ $2 == "--help" ]; then
+	echo Syntax: ./timeit.sh patternfile\|regex henry\|gnu all\|print\|real [data_files]
+	echo Specify a file for patternfile or a regular expression for regex
+	echo \"henry\" uses the Henry Spencer \(kernel\) regex library
+	echo \"gnu\" uses the GNU \(userspace\) regex library
 	echo \"all\" tests against all characters, 
 	echo \"print\" only against printable ones,
 	echo \"real\" against some real data.
-	echo In real mode, if data files are specified, they are used,
-	echo otherwise, all files in data/ are used.
+	echo In \"real\" mode, if data files are specified, they are used,
+	echo otherwise, all files in ./data/ are used.
 	exit 1
 fi
 
-if [ -x ./randchars ] && [ -x ./randprintable ] && [ -x ./test_speed ]; then
+echo
+if [ $2 == "henry" ]; then
+        echo Using the Henry Spencer \(kernel\) regex library.
+        speedprog=./test_speed-henry
+elif [ $2 == "gnu" ]; then
+        echo Using the GNU \(userspace\) library.
+        speedprog=./test_speed-gnu
+else
+        echo Didn\'t understand what library you wanted.
+	echo Please give either \"henry\" or \"gnu\".
+	exit 1
+fi
+
+if [ -x ./randchars ] && [ -x ./randprintable ] && [ -x $speedprog ]; then
 	true
 else
 	echo Can\'t find randchars, randprintable or test_speed.
@@ -50,33 +65,43 @@ else
 	exit 1
 fi
 
-echo
-
 echo Timing $1
-if [ $2 == "all" ]; then
+if [ $3 == "all" ]; then
 	echo Using all characters
-	./randchars | time ./test_speed "`extract $1`" verbose
-elif [ $2 == "print" ]; then
+	if ! ./randchars | time $speedprog "`extract $1`" verbose; then
+		echo $speedprog failed. > /dev/stderr
+		exit 1
+	fi
+elif [ $3 == "print" ]; then
 	echo Using only printable characters
-	./randprintable | time ./test_speed "`extract $1`" verbose
-elif [ $2 == "real" ]; then
+	if ! ./randprintable | time $speedprog "`extract $1`" verbose; then
+		echo $speedprog failed. > /dev/stderr
+		exit 1
+	fi
+elif [ $3 == "real" ]; then
 	echo Using some real data
 
 	# uncomment to be able to exit all at once
 	trap "rm tmp.$$; echo; exit 1" 2
 
-	if [ $3 ]; then 
+	if [ $4 ]; then 
 		for f in $@; do
-			if [ -r $f ] && [ $f != $1 ] && [ $f != $2 ]; then
+			if [ -r $f ] && [ $f != $1 ] && [ $f != $2 ] && [ $f != $3 ]; then
 				printf $f\\t
 				echo `extract $1`
-				cat $f | time ./test_speed "`extract $1`" 2> /dev/stdout | tee -a tmp.$$
+				if ! cat $f | time $speedprog "`extract $1`" 2> /dev/stdout | tee -a tmp.$$; then
+					echo $speedprog failed. > /dev/stderr
+					exit 1
+				fi
 			fi
 		done
 	else
 		for f in data/*; do
 			printf $f\\t
-			cat $f | time ./test_speed "`extract $1`" 2> /dev/stdout | tee -a tmp.$$
+			if ! cat $f | time $speedprog "`extract $1`" 2> /dev/stdout | tee -a tmp.$$; then
+				echo $speedprog failed. > /dev/stderr
+				exit 1
+			fi
 		done
 	fi
 

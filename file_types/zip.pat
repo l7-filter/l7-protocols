@@ -1,5 +1,5 @@
 # ZIP - (PK|Win)Zip archive format  
-# Pattern attributes: good fast subset
+# Pattern attributes: good notsofast notsofast subset
 # Protocol groups: file
 
 zip

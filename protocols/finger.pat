@@ -1,5 +1,5 @@
 # Finger - User information server - RFC 1288
-# Pattern attributes: good notsofast undermatch overmatch
+# Pattern attributes: good slow slow undermatch overmatch
 # Protocol groups: ietf_draft_standard
 # Wiki: http://www.protocolinfo.org/wiki/Finger
 #

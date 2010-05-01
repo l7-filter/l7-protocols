@@ -1,3 +1,15 @@
+2006 12 11
+Reduced equifax part of validcertssl to just "equifax secure" and made 
+sure it could match all of ssl if followed by a known certificate 
+authority. Upgraded socks quality to "good". Improved battlefield2 by 
+making it more liberal.
+
+Extended test suite to include use of the GNU library which is used in the
+new userspace version. Fixed a long-standing quoting bug which made it 
+impossible to see matches if the regex got mangled by bash.  Updated all
+speeds (included both libraries' speeds).  Noted several cases where the
+existing pattern is not valid for GNU regexps.
+
 2006 10 18
 Added tor. Added more standard/proprietary/open_source groups, but moved
 all such groups to the ends of the lines because they are less relevant

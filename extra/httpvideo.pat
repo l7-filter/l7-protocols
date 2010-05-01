@@ -1,5 +1,5 @@
 # HTTP - Video over HyperText Transfer Protocol (RFC 2616)
-# Pattern attributes: good fast subset
+# Pattern attributes: good notsofast notsofast subset
 # Protocol groups: streaming_video document_retrieval ietf_draft_standard
 # Wiki: http://protocolinfo.org/wiki/HTTP
 #

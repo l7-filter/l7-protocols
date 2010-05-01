@@ -1,5 +1,5 @@
 # SNMP Traps - Simple Network Management Protocol (RFC1157)
-# Pattern attributes: good veryfast subset
+# Pattern attributes: good veryfast fast subset
 # Protocol groups: networking ietf_internet_standard
 # Wiki: http://en.wikipedia.org/wiki/SNMP
 #

@@ -1,5 +1,5 @@
 # Tar - tape archive.  Standard UNIX file archiver, not just for tapes.
-# Pattern attributes: good fast subset
+# Pattern attributes: good notsofast notsofast subset
 # Protocol groups: file
 
 tar

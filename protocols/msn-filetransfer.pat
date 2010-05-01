@@ -1,5 +1,5 @@
 # MSN (Micosoft Network) Messenger file transfers (MSNFTP and MSNSLP)
-# Pattern attributes: good veryfast
+# Pattern attributes: good fast fast
 # Protocol groups: chat document_retrieval proprietary
 # Wiki: http://www.protocolinfo.org/wiki/MSN_Messenger
 #

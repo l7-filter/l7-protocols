@@ -1,5 +1,5 @@
 # Executable - Microsoft PE file format.  
-# Pattern attributes: good fast subset
+# Pattern attributes: good notsofast notsofast subset
 # Protocol groups: file
 
 # Thanks to Brandon Enright [bmenrighATucsd.edu]

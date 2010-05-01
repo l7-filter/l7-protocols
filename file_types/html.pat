@@ -1,5 +1,5 @@
 # (X)HTML - (Extensible) Hypertext Markup Language - http://w3.org
-# Pattern attributes: good fast subset
+# Pattern attributes: good fast notsofast subset
 # Protocol groups: file
 # 
 # This pattern has been tested and is believe to work well.

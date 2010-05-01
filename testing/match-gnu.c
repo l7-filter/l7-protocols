@@ -1,10 +1,18 @@
+/* Reads in a stream of bytes and tests the first MAX of them to see if 
+they match the regular expression passed in on the command line.
+
+Uses the standard GNU regular expression library which the userspace version of
+l7-filter uses.
+
+See ../LICENCE for copyright.
+*/
+
 #include <ctype.h>
 #include <stdio.h>
-#include "regexp/regexp.c"
+#include <regex.h>
 
-#define MAX 1500
-#define TIMES 100000
-#define MAX_PATTERN_LEN 8192
+#define MAX 512
+#define MAX_PATTERN_LEN 8196
 
 static int hex2dec(char c)
 {
@@ -50,77 +58,40 @@ static char * pre_process(char * s)
         return result;
 }
 
-
-void doit(regexp * pattern, char ** argv, int verbose)
-{
-	char input[MAX];
-	int c;
-
-	for(c = 0; c < MAX; c++)
-	{
-		char temp = 0;
-		while(temp == 0)
-		{
-			if(EOF == scanf("%c", &temp))
-				goto out;
-			input[c] = temp;
-		}
-	}
-	out:
-
-	input[c-1] = '\0';
-
-	for(c = 0; c < MAX; c++) input[c] = tolower(input[c]);
-
-	for(c = 1; c < TIMES; c++){
-		int result = regexec(pattern, input);
-		if(c == 1)
-			if(result)
-				fprintf(stderr, "match\t");
-			else
-				fprintf(stderr, "no_match\t");
-
-		if(c%(TIMES/20) == 0){ fprintf(stderr, "."); }
-	}
-	if(verbose)
-		puts("");
-	else
-		printf(" ");
-}
-
-// Syntax: test_speed regex [verbose]
 int main(int argc, char ** argv)
 {
-	regexp * pattern = (regexp *)malloc(sizeof(struct regexp));
+	regex_t pattern;
 	char * s = argv[1];
-	int patternlen, i, verbose = 0;
+	char input[MAX];
+	int patternlen, inputlen = 0, c = 0;
 
-	if(argc < 2){
-		fprintf(stderr, "need an arg\n");
+	if(!argv[1]){
+		fprintf(stderr, "need an arg (the pattern)\n");
 		return 1;
 	}
-	if(argc > 2)
-		verbose = 1;
-
 	patternlen = strlen(s);
 	if(patternlen > MAX_PATTERN_LEN){
-		fprintf(stderr, "Pattern too long! Max is %d\n", MAX_PATTERN_LEN);
+		fprintf(stderr, "Pattern is too long!  Max is %d.\n", MAX_PATTERN_LEN);
 		return 1;
 	}
 
 	s = pre_process(s); /* do \xHH escapes */
 
-	pattern = regcomp(s, &patternlen);
+	regcomp(&pattern, s, REG_EXTENDED);
 
-	if(!pattern){
-		fprintf(stderr, "error compiling regexp\n");
-		exit(1);
+	for(c = 0; c < MAX; c++){
+		// assumes there's plenty to eat
+		input[inputlen] = getchar();
+		inputlen++;
 	}
+	input[inputlen] = '\0';
 
-	if(verbose)
-		printf("running regexec \"%.16s...\" %d times\n", argv[1], TIMES);
+	for(c = 0; c < inputlen; c++)
+		input[c] = tolower(input[c]);
 
-	doit(pattern, argv, verbose);
+	if(!regexec(&pattern, input, 0, 0, 0))	puts("Match");
+	else				        puts("No match");
 
 	return 0;
+
 }

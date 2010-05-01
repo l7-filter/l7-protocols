@@ -1,5 +1,5 @@
 # Citrix ICA - proprietary remote desktop application - http://citrix.com
-# Pattern attributes: marginal fast
+# Pattern attributes: marginal notsofast notsofast
 # Protocol groups: remote_access proprietary
 # Wiki: http://www.protocolinfo.org/wiki/Citrix
 # 

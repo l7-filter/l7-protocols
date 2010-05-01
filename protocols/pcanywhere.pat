@@ -1,5 +1,5 @@
 # pcAnywhere - Symantec remote access program
-# Pattern attributes: marginal veryfast
+# Pattern attributes: marginal fast fast
 # Protocol groups: remote_access proprietary
 # Wiki: http://www.protocolinfo.org/wiki/PcAnywhere
 

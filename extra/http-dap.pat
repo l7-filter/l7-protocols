@@ -1,5 +1,5 @@
 # HTTP by Download Accelerator Plus - http://www.speedbit.com
-# Pattern attributes: good fast subset
+# Pattern attributes: good notsofast notsofast subset
 # Protocol groups: document_retrieval ietf_draft_standard
 # Wiki: http://protocolinfo.org/wiki/HTTP
 #

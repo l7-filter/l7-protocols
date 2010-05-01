@@ -1,5 +1,5 @@
 # Flash - Macromedia Flash.  
-# Pattern attributes: good veryfast subset
+# Pattern attributes: good veryfast fast subset
 # Protocol groups: file
 
 # Thanks to Brandon Enright {bmenrigh AT ucsd.edu}

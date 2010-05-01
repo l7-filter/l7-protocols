@@ -1,5 +1,5 @@
 # PDF - Portable Document Format - Postscript-like format by Adobe
-# Pattern attributes: good fast subset
+# Pattern attributes: good fast notsofast subset
 # Protocol groups: file
 # 
 # This pattern has been tested and is believe to work well.

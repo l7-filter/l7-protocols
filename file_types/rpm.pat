@@ -1,5 +1,5 @@
 # RPM - Redhat Package Management packages
-# Pattern attributes: good fast subset
+# Pattern attributes: good fast notsofast subset
 # Protocol groups: file
 
 rpm

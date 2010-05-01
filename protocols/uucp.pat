@@ -1,5 +1,5 @@
 # UUCP - Unix to Unix Copy
-# Pattern attributes: ok veryfast
+# Pattern attributes: ok veryfast fast
 # Protocol groups: document_retrieval obsolete
 # Wiki: http://www.protocolinfo.org/wiki/UUCP
 

@@ -15,16 +15,34 @@ if [ ! $1 ]; then
 	exit 1
 fi
 
-if [ $2 ]; then
-	times=$2
+if [ ! $2 ]; then
+	echo Using the GNU \(userspace\) library.
+	echo You can change this by saying \"henry\" as the second arg.
+	matchprog=./match-gnu
+elif [ $2 == "henry" ]; then
+	echo Using the Henry Spencer \(kernel\) regex library.
+	matchprog=./match-henry
+elif [ $2 == "gnu" ]; then
+	echo Using the GNU \(userspace\) library.
+	matchprog=./match-gnu
 else
-	times=500
+	echo Didn\'t understand what library you wanted.
+	echo Using the GNU \(userspace\) library.
+	matchprog=./match-gnu
 fi
 
-if [ -x ./randchars ] && [ -x ./match ] && [ -x ./randprintable ]; then
+if [ $3 ]; then
+	times=$3
+else
+	times=500
+	echo Checking against 500 randomly generated strings.
+	echo You can change this by giving a number as the third arg.
+fi
+
+if [ -x ./randchars ] && [ -x $matchprog ] && [ -x ./randprintable ]; then
 	true
 else
-	echo Can\'t find randchars, match or randprintable.  
+	echo Can\'t find randchars, $matchprog or randprintable.  
 	echo They should be in this directory.  Did you say \"make\"?
 	exit 1
 fi
@@ -33,14 +51,16 @@ printf "Out of $times random streams, this many match: "
 
 pattern="`extract $1`"
 
+echo pattern is $pattern
+
 for f in `seq $times`; do
-	if [ $2 ]; then printf . > /dev/stderr; fi
-	if ! ./randchars | ./match $pattern; then exit 1; fi
-done | grep -v No -c
+	if [ $3 ]; then printf . > /dev/stderr; fi
+	if ! ./randchars | $matchprog "$pattern"; then exit 1; fi
+done # | grep -v No -c
 
 printf "Out of $times printable random streams, this many match: " 
 
 for f in `seq $times`; do
-	if [ $2 ]; then printf . > /dev/stderr; fi
-	if ! ./randprintable | ./match $pattern; then exit 1; fi
-done | grep -v No -c
+	if [ $3 ]; then printf . > /dev/stderr; fi
+	if ! ./randprintable | $matchprog "$pattern"; then exit 1; fi
+done # | grep -v No -c

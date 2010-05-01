@@ -1,5 +1,5 @@
 # Tencent QQ Protocol - Chinese instant messenger protocol - http://www.qq.com
-# Pattern attributes: good veryfast
+# Pattern attributes: good fast fast
 # Protocol groups: chat
 # Wiki: http://www.protocolinfo.org/wiki/QQ
 #

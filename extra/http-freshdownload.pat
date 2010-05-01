@@ -1,5 +1,5 @@
 # HTTP by Fresh Download - http://www.freshdevices.com
-# Pattern attributes: good fast subset
+# Pattern attributes: good notsofast notsofast subset
 # Protocol groups: document_retrieval ietf_draft_standard
 # Wiki: http://protocolinfo.org/wiki/HTTP
 # Uses HTTP to download.
