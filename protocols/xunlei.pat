@@ -13,5 +13,5 @@
 # Improved more by wsgtrsys and platinum of bbs.chinaunix.net.
 
 xunlei
-^[\x28\x29]...?.?.?(reg|get|query)
+^[()]...?.?.?(reg|get|query)
 

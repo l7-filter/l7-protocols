@@ -1,3 +1,9 @@
+2006 03 13
+Improved bittorrent.  It, of course, does not match the new encrypted
+streams, just more of the other stuff.  Edited edonkey, skypeout, tsp,
+xunlei, battlefield2 to remove warnings about control characters. 
+Mostly, this was just cosmetic, but in a few cases there were actually bugs.
+
 2006 02 12
 Updated WANTED.  Added uucp (ha!) and a VERY preliminary version of
 pcanywhere.  Improved msnmessenger. It now catches actual conversations

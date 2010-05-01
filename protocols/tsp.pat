@@ -13,4 +13,4 @@
 
 tsp
 # type, version (1), sequence number, 8 type specific bytes, machine name
-^[\x01-\x13\x16-\x24]\x01.?.?.?.?.?.?.?.?.?.?[ -~]+
+^[\x01-\x13\x16-$]\x01.?.?.?.?.?.?.?.?.?.?[ -~]+
