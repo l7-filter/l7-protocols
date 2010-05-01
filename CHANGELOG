@@ -1,3 +1,6 @@
+2006 04 09
+Updated edonkey for some (apparently) new packet types.
+
 2006 03 13
 Improved bittorrent.  It, of course, does not match the new encrypted
 streams, just more of the other stuff.  Edited edonkey, skypeout, tsp,
