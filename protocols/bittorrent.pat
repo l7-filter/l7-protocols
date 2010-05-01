@@ -17,5 +17,11 @@ bittorrent
 # Ditto on the next bit.  Could also match on "user-agent: azureus", but that's in the next
 # packet and perhaps this will match multiple clients.
 
-# This is not a valid GNU basic regular expression (but we don't use those).
-\x13bittorrent protocol|d1:ad2:id20:|\x08'7P\)[RP]|^azver\x01$|^get /scrape\?info_hash=
+# Recently the ^ was removed from before \x13.  I think this was an accident,
+# so I have restored it.
+
+# This is not a valid GNU basic regular expression (but that's ok).
+^(\x13bittorrent protocol|azver\x01$|get /scrape\?info_hash=)|d1:ad2:id20:|\x08'7P\)[RP]
+
+# This pattern is "fast", but won't catch as much
+#^(\x13bittorrent protocol|azver\x01$|get /scrape\?info_hash=)

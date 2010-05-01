@@ -1,3 +1,8 @@
+2007 01 08
+Slightly improved performance of bittorrent pattern.  Fixed comment in 
+msn-filetransfer.  Added userspace pattern format lines to smtp and x11.
+The testing suite does NOT yet understand this format.
+
 2007 01 04
 Renamed testing to unset.
 
