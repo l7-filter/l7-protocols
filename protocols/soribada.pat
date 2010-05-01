@@ -25,8 +25,8 @@
 # actually has the file.
 # Both format start with a \x01 byte, have 3 "random bytes" and then 3 bytes
 # corasponding to one of two formats.
-# Format 1 is \x51\x3a\x2b and format 2 is \x51\x32\x3a
-# A regex match: ^\x01.?.?.?(\x51\x3a\x2b|\x51\x32\x3a)
+# Format 1 is \x51\x3a\+ and format 2 is \x51\x32\x3a
+# A regex match: ^\x01.?.?.?(\x51\x3a\+|\x51\x32\x3a)
 
 # 3 -- Download requests:
 # All downloads start with "GETMP3\x0d\x0aFilename"
@@ -38,11 +38,11 @@ soribada
 # ^\x10[\x14-\x16]\x10[\x15-\x17].?.?.?.?$
 
 # Again, matching this is the end of the comunication.
-# ^\x01.?.?.?(\x51\x3a\x2b|\x51\x32\x3a)
+# ^\x01.?.?.?(\x51\x3a\+|\x51\x32\x3a)
 
 # This is the start of the transfer and an easy match
 #^GETMP3\x0d\x0aFilename
 
 # This will match everything including the udp packet portions
-^GETMP3\x0d\x0aFilename|^\x01.?.?.?(\x51\x3a\x2b|\x51\x32\x3a)|^\x10[\x14-\x16]\x10[\x15-\x17].?.?.?.?$
+^GETMP3\x0d\x0aFilename|^\x01.?.?.?(\x51\x3a\+|\x51\x32\x3a)|^\x10[\x14-\x16]\x10[\x15-\x17].?.?.?.?$
 

@@ -5,7 +5,6 @@
 #define MAX 1500
 #define TIMES 100000
 
-
 static int hex2dec(char c)
 {
         switch (c)
@@ -69,6 +68,11 @@ int main(int argc, char ** argv)
 	s = pre_process(s); /* do \xHH escapes */
 
 	pattern = regcomp(s, &patternlen);
+
+	if(!pattern){
+		fprintf(stderr, "error compiling regexp\n");
+		exit(1);
+	}
 
 	while(EOF != (input[inputlen] = getchar()) && inputlen < MAX)
 		inputlen++;

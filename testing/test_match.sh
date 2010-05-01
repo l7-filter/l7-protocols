@@ -14,6 +14,12 @@ if [ ! $1 ]; then
 	exit 1
 fi
 
+if [ $2 ]; then
+	times=$2
+else
+	times=500
+fi
+
 if [ -x ./randchars ] && [ -x ./match ] && [ -x ./randprintable ]; then
 	true
 else
@@ -25,15 +31,17 @@ fi
 for arg in $@; do
 	echo $arg
 
-	printf "Out of 500 random streams, about this many will match:" 
+	printf "Out of $times random streams, this many match: "
 
-	for f in `seq 500`; do
-		./randchars | ./match "`extract $arg`" | grep -v No
-	done | wc -l
+	for f in `seq $times`; do
+		if [ $2 ]; then printf . > /dev/stderr; fi
+		./randchars | ./match "`extract $arg`" 
+	done | grep -v No -c
 
-	printf "Out of 500 printable random streams, about this many will match:" 
+	printf "Out of $times printable random streams, this many match: " 
 
-	for f in `seq 500`; do
-		./randprintable | ./match "`extract $arg`" | grep -v No
-	done | wc -l
+	for f in `seq $times`; do
+		if [ $2 ]; then printf . > /dev/stderr; fi
+		./randprintable | ./match "`extract $arg`"
+	done | grep -v No -c
 done

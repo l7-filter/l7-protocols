@@ -1,3 +1,10 @@
+2005 05 23
+Realizing that "\x7c" is treated _exactly_ like "|" (and so forth):
+\x7c --> \| in battlefield1942
+\x2b --> \+ in soribada
+\x2e --> \. in tesla
+Added halflife2-deathmatch.
+
 2005 05 19
 Fixed rar (had the zip pattern by accident).  Fixed what I think was a typo
 in finger '$' --> '^'.  Added trivial script, test_all.sh, to testing.
