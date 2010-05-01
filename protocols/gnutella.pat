@@ -5,7 +5,7 @@
 # This should match both Gnutella and "Gnutella2" ("Mike's protocol")
 # 
 # Various clients use this protocol including Mactella, Shareaza,
-# GTK-gnutella, Gnucleus, Gnotella, LimeWire, BearShare, and iMesh.
+# GTK-gnutella, Gnucleus, Gnotella, LimeWire, iMesh and BearShare.
 # 
 # This is tested with gtk-gnutella and Shareaza.
 #
