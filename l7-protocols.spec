@@ -1,6 +1,6 @@
 Name: l7-protocols
 Summary: Protocol definitions files for l7-filter
-Version: 2004_11_22
+Version: 2004_12_08
 Release: 1
 License: GPL
 Group: Applications/Internet
@@ -29,8 +29,8 @@ make PREFIX=$RPM_BUILD_ROOT install
 /etc/l7-protocols/
 
 %changelog
-* Thu Nov 22 2004 Matthew Strait <quadong@users.sf.net> 2004_11_22-1
-- Upgrade to 2004_11_22
+* Thu Dec 08 2004 Matthew Strait <quadong@users.sf.net> 2004_12_08-1
+- Upgrade to 2004_12_08
 * Thu Oct 29 2004 Matthew Strait <quadong@users.sf.net> 2004_10_29-1
 - Upgrade to 2004_10_29
 * Thu Oct 17 2004 Matthew Strait <quadong@users.sf.net> 2004_10_17-1

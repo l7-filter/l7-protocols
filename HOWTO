@@ -1,5 +1,5 @@
-Hello.  This is a guide for writing patterns for l7-filter.  If you want a 
-HOWTO for using l7-filter, see http://l7-filter.sf.net
+This is a guide for writing patterns for l7-filter.  If you want a HOWTO
+for _using_ l7-filter, see http://l7-filter.sf.net
 
 *** File Format ***
 
@@ -17,7 +17,7 @@ look like this:
 
 In other words, the top line should start with "# " and then have a
 freeform string.  The next line should start with "# Pattern quality: "
-and then have one of "great", "good", "ok", "marginal" and "poor" after it.
+and then have one of "great", "good", "ok", "marginal" or "poor".
 
 *** Regular Expressions ***
 
