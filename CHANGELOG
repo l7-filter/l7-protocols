@@ -1,3 +1,6 @@
+2006 01 08
+Socks marginal -> ok.  Added ventrilo.
+
 2005 12 16
 Tweaked "pattern group" metadata.  Reserved "networking" for protocols
 that are really nuts and bolts like DNS, DHCP and BGP.  Clarified "internet

@@ -1,4 +1,4 @@
-# Shoutcast & Icecast - streaming audio
+# Shoutcast and Icecast - streaming audio
 # Pattern quality: good fast
 # Protocol groups: streaming_audio
 #
