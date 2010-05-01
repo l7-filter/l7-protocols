@@ -2,6 +2,8 @@
 # Pattern quality: ok veryfast
 # Protocol groups: proprietary voip
 #
+# See http://www.protocolinfo.org/wiki/Ventrilo for more information.
+#
 # I have tested this with Ventrilo client 2.3.0 on Windows talking to
 # Ventrilo server 2.3.1 (the public version) on Linux.  In this test, I
 # tried monkeying around with the server settings to see if I could
@@ -18,5 +20,5 @@
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 ventrilo
-^..?\x56\x24\xcf
+^..?v\$\xcf
 

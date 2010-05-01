@@ -2,6 +2,8 @@
 # Pattern quality: good notsofast
 # Protocol groups: proprietary chat
 #
+# See www.protocolinfo.org/wiki/AIM to get or provide more information.
+#
 # Usually runs on port 5190
 #
 # This may also match ICQ traffic.

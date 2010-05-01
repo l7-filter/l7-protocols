@@ -2,6 +2,8 @@
 # Pattern quality: ok veryfast
 # Protocol groups: p2p
 #
+# See www.protocolinfo.org/wiki/100Bao to get or provide more information.
+#
 # The author of this pattern says it works, but this is unconfirmed. If
 # this pattern does not work for you, or you believe it could be
 # improved, please post to l7-filter-developers@lists.sf.net .  This
