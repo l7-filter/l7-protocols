@@ -77,7 +77,10 @@ int main(int argc, char ** argv)
 
 	s = pre_process(s); /* do \xHH escapes */
 
-	regcomp(&pattern, s, REG_EXTENDED);
+	if(regcomp(&pattern, s, REG_EXTENDED)){
+		fprintf(stderr, "Error compiling regular expression!\n");
+		exit(1);
+	}
 
 	for(c = 0; c < MAX; c++){
 		// assumes there's plenty to eat

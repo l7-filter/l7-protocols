@@ -51,16 +51,14 @@ printf "Out of $times random streams, this many match: "
 
 pattern="`extract $1`"
 
-echo pattern is $pattern
-
 for f in `seq $times`; do
 	if [ $3 ]; then printf . > /dev/stderr; fi
 	if ! ./randchars | $matchprog "$pattern"; then exit 1; fi
-done # | grep -v No -c
+done | grep -v No -c
 
 printf "Out of $times printable random streams, this many match: " 
 
 for f in `seq $times`; do
 	if [ $3 ]; then printf . > /dev/stderr; fi
 	if ! ./randprintable | $matchprog "$pattern"; then exit 1; fi
-done # | grep -v No -c
+done | grep -v No -c

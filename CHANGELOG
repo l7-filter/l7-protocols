@@ -1,3 +1,7 @@
+2006 12 12
+Fixed some bugs in the testing programs.  Made rtf and skypeout valid 
+for both henry and gnu.
+
 2006 12 11
 Reduced equifax part of validcertssl to just "equifax secure" and made 
 sure it could match all of ssl if followed by a known certificate 
