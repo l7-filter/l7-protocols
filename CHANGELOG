@@ -1,3 +1,7 @@
+2005 08 06
+Added "overmatch" to skypeout.  Improved gnutella (is much faster and no 
+longer attempts to match gnutella web cache HTTP connections).
+
 2005 07 28
 Skypeout was too long, fixed.  Added checks in tests for this.  Added some
 info to HOWTO.  Improved gnutella (picks up limewire wierdness).

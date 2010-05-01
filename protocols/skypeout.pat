@@ -1,5 +1,5 @@
 # Skype to phone - UDP voice call (http://skype.com/)
-# Pattern Quality : ok fast undermatch
+# Pattern Quality : ok fast undermatch overmatch
 
 # Thanks to Myles Uyema, mylesuyema AT gmail.com
 
