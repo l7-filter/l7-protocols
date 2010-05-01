@@ -15,7 +15,8 @@
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 ares
-^\x03[\x5a\x5d].?.?\x05$
+# regular expression madness: "[]Z]" means ']' or 'Z'.
+^\x03[]Z].?.?\x05$
 
 # It appears that the general packet format is:
 # - Two byte little endian integer giving the data length

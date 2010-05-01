@@ -1,4 +1,4 @@
-# MSN Filetransfers - Filetransfers as used by MSN Messenger
+# MSN (Micosoft Network) Messenger Filetransfers (MSNFTP and MSNSLP)
 # Pattern quality: good veryfast
 # Protocol groups: proprietary document_retrieval
 #
@@ -21,6 +21,7 @@
 
 # Second part matches newer MSNSLP: 
 # http://msnpiki.msnfanatic.com/index.php/MSNC:MSNSLP
+# This part is untested.
 
 msn-filetransfer
 ^(ver [ -~]*msnftp\x0d\x0aver msnftp\x0d\x0ausr|method msnmsgr:)

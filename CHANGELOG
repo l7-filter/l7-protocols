@@ -1,3 +1,10 @@
+2006 01 17
+Improved msnmessenger pattern slightly.  (I don't think it was causing
+any problems, but it wasn't set up to catch connections that only
+specified one version of MSNP.  This does _not_ address the possible issue
+currently under discussion on the mailing list.)
+Fixed ares, it had a regexp syntax error.
+
 2006 01 15
 ventrilo ok -> good, skypetoskype good -> marginal.
 Improved gopher (it actually didn't work at all before, like anyone cared :-)).
