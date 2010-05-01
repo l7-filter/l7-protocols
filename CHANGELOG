@@ -1,3 +1,7 @@
+2008 01 09
+Fixed typo in skypeout.  This should slightly improve detection and prevent
+a warning message.
+
 2007 11 22
 Added battlefield2142.
 
