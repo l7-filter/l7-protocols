@@ -1,1 +1,0 @@
-skypeout.pat
