@@ -1,0 +1,22 @@
+Patterns in this directory are weak in the sense that:
+
+(1) they will very likely match things they are not intended to.  
+(2) they are likely to miss a large fraction of things they should match
+or
+(3) they are too slow
+
+Some protocols just don't have much to latch on to.  It is recommended
+that you match on port number for these protocols.  You could use the
+patterns to verify that traffic on port X really is what is expected
+there.  That is, you should do:
+
+If ( on port 4200-4700 && looks like eDonkey2000 )
+	treat as eDonkey2000;
+
+But NOT simply:
+
+If ( looks like eDonkey2000 )
+	treat as eDonkey2000;
+
+Actually, this is fairly good advice for most Internet standard protocols
+too, but more so for things in this directory.

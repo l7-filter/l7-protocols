@@ -1,0 +1,143 @@
+2004 07 07
+Added bgp.  Added Makefile and spec file.
+
+2004 07 05
+Added msn-filetransfer, zmaap, lpd.  Added a program to test for false
+matches. Removed mysql because it has too many false matches.
+
+2004 07 01 
+Cleaned up http (had an extraneous line).  Added httpaudio, httpvideo,
+httpcachehit and httpcachemiss to extras.  Improved quake-halflife,
+bittorrent.
+
+2004 06 27
+Fixed hddtemp.  Slight improvements to Yahoo, SMB.  Improvements to 
+msnmessenger.  Added TSP.  Small bugfix in timeit.sh
+
+2004 06 01
+RDP fixed.  Quicktime added.  Added "extra" directory and moved anything that
+was a subset of something else in there.
+
+2004 04 22
+The performance testing program didn't do \xHH escapes.  Now it does.
+
+2004 03 24
+Fixed gopher, openft.
+Added goboogy, tesla, hotline.
+Added performance testing program.
+
+2004 02 23
+Improved the speed of dns, aim, directconnect, gnutella, http, imap,
+nntp, ncp, msnmessenger, audiogalaxy, snmp.  Still slow are (starting
+with the worst):  ssh, fasttrack, validcertssl, aim, nbns, quake-halflife,
+http, openft.  All the rest are at least 30 times faster than the fastest
+of these.  (With Henry Spencer's regexp implementation, which is what we
+currently use.)
+
+2004 02 17
+Improved HTTP.  Fixed and improved gnutella.  Added hddtemp.
+
+2004 02 08
+Added MUTE and openFT.
+
+2004 01 06
+Added audiogalaxy.  Improved gnutella.
+
+2004 01 02
+Changed quakeworld.pat to quake-halflife.pat .  Improved it (still untested,
+though).
+
+Changed kazaa.pat to fasttrack.pat.  Improved it.
+
+2003 12 16
+Added H.323.  Improved NNTP, Ident, DNS.
+Added "pattern quality" lines to all patterns.
+
+2003 12 11
+Added VNC.
+
+2003 12 09
+Added jpg, gif, flash.  Updated file_types/README. 
+Made edonkey work and moved it to weakpatterns.
+
+2003 11 29
+Added CVS.
+
+2003 11 23
+Changed directory structure.  All patterns are now in subdirectories.
+Made sure that all filenames matched protocol names.  Noted patterns
+that require multipacket support.  General cleanup.
+
+2003 11 12
+Updated HOWTO to include Netfilter version, etc.
+Added comments regarding what I've learned from ipp2p (thanks to Eicke 
+Friedrich)
+Added applejuice, quake1, quakeworld.
+Improved (fixed?) bittorrent.  
+
+2003 10 24
+Reverted to single packet ftp pattern. Minor revisions to malware/*
+
+2003 10 08
+Added eDonkey2000 pattern.  Added file_type directory (with html, ogg,
+pdf, perl, ps, rpm, tar and rtf).  Added malware directory (with Code Red
+and Nimda).
+
+2003 09 26
+I need to remember to include http in all the releases!  Sorry about that.
+Added jabber.
+
+2003 09 24
+Added socks, nntp.
+
+2003 09 22
+Releases from here on should only be used with >=0.3.0 of the kernel patch
+Some significant speed improvements (gopher is no longer slow enough to bring
+down the machine when searching large strings) and some small accuracy 
+improvements. 
+Moved winmx and gopher to weakpatterns.  
+Added snmp, snmp-mon and snmp-trap
+
+2003 09 19
+Added Samba, telnet.
+Added weakpatterns directory, which now contains mysql, finger, netbios.  
+
+2003 09 18
+Added directconnect.
+
+2003 09 15
+Added biff.  Fixed pop3 again.  Improved SMTP.
+
+2003 09 14
+Added rlogin.
+
+2003 09 12
+Fixed pop3.  Improved HTTP.
+
+2003 09 10
+Added dns, gopher.
+
+2003 09 05 
+Improved x11, yahoo. Added bearshare.  Changed all patterns to use \xHH
+notation instead of non-printable characters.  This release, therefore,
+MUST be used only with version >= 0.2.0 of the kernel patch.
+
+2003 08 28
+Added irc, ident, x11.  Made a number of patterns more specific by adding
+a '^' at the beginning of the line.  Could have also added some $s at the end
+of lines, but in anticipation of matching across packets, didn't.
+Improved HOWTO.  
+
+2003 08 21
+Added counterstrike, live365, pressplay, winmx. Fixed gkrellm.
+Fixed several patterns that used uppercase letters, which can't ever
+match.  Will fix the kernel patch soon so that this doesn't matter.
+Got rid of the #s in files like this one.  They were annoying.  
+Just use "*.pat" in your scripts instead of "*".
+Added pattern writing HOWTO.
+ 
+2003 08 19
+Fixed ftp.  Added gkrellm. Simplified tftp.
+
+2003 08 09
+Fixed dhcp.  Added tftp.  Improved aim.

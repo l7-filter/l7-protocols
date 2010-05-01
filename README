@@ -1,0 +1,37 @@
+These are patterns (protocol definitions) for use with the Linux layer 7
+packet classifier (l7-filter).  In order to use them, you will need the
+kernel and iptables patches available at http://sf.net/projects/l7-filter/
+ 
+To install these patterns into their default location, say "make install".
+ 
+The HOWTO at http://l7-filter.sf.net explains how to use l7-filter.
+
+The HOWTO in this directory is a guide to writing patterns.
+
+These patterns should be used only with version 0.4.0 or higher of the
+Netfilter kernel patch.
+
+The patterns in the "protocols" directory are the mainstream ones.  They 
+match protocols like HTTP, FTP, eDonkey2000, Kazaa, and so on.
+
+"weakpatterns" contains patterns similar to the ones in "protocols", but
+that are, for whatever reason, not very good.  
+
+"extra" is for patterns of less general interest.
+
+"malware" contains patterns for viruses and worms.  
+
+"file_types" contains patterns for file types.
+
+The "testing" directory contains a program for testing the speed and
+accuracy of the patterns.
+
+Please report your experience with l7-filter and these patterns to
+l7-filter-developers@lists.sf.net .  You may subscribe to this list at
+http://lists.sourceforge.net/lists/listinfo/l7-filter-developers 
+You can also e-mail Matthew Strait, the primary maintainer, directly at
+quadong@users.sf.net
+
+Please note that many of these patterns were NOT written by experts.  So
+if you think a pattern is broken and you know better, you may be right! 
+Let us know.

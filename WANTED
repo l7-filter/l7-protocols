@@ -1,0 +1,97 @@
+Please read HOWTO for information on writing patterns.
+
+The below is taken from the list of protocols supported by the
+Packeteer, a commercial packet shaper.  See page 197 of
+http://www.packeteer.com/support/home/DSP/docs/archive/41manuals/refGuide/41.refguide.pdf
+
+If you can contribute knowledge to this list, please post to
+l7-filter-developers@lists.sf.net Subscribe at
+http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
+ 
+want 	= Don't have a pattern for this (and want one)
+? 	= We don't know well enough how this works to know what we should do
+done?   = We're not sure if our current patterns covers this
+
+?	ActiveX		Microsoft's object-oriented program technologies and tools
+want	AFP		AppleTalk Filing Protocol (AppleShare IP)
+want	Baan 		Baan enterprise management system
+want	BackWeb(Polite)	Push technology Polite BackWeb has an agent on the client to prevent BackWeb background traffic from interfering with other IP network applications
+?	CBT		Core-based Trees (Multicast Routing Protocol)
+want	ccMail		cc:Mail email application
+?	CiscoDiscovery	Cisco Router Discovery Protocol
+want	Citrix		Connectivity application that enables any type of client to access applications	across any type of network connection.
+?	Clarent-CC	Clarent Voice over IP Command Center
+?	Clarent-Complex	Clarent complex traffic
+?	Clarent-Mgmt	Clarent management traffic
+?	Clarent-Voice-S	Clarent voice traffic (simple)
+want	CORBA		CORBA Internet Inter-ORB Protocol (IIOP)
+?	CRS		Microsoft Content Replication Service and Distributed Password Authentication (Membership Broker)
+?	CU-Dev		Fujitsu Device Control (CU-DEV on TCP/IP)
+want	CUSeeMe		Internet telephone application service group
+want	DCOM		Microsoft Distributed Component Object Model
+?	DECnet		Digital Equipment Corporation's network protocol
+want	DLS		SNA and FNA over TCP transport--Service group classification of Data Link Switch traffic, both read and write port numbers
+want	Doom		Doom, the game
+want	DPA		Microsoft's Distributed Password Authentication
+?	DRP		DECnet Routing Protocol
+?	EGP		Network Routing Information (Exterior Gateway Protocol)
+?	EIGRP		Enhanced Interior Gateway Routing Protocol
+want	FileMaker Pro	Database Application
+want	FIX		Financial Information eXchange
+?	FNA		Fujitsu Network Architecture (a variant of SNA)
+?	FNAonTCP	Transport Independent Convergence - FNA
+want	Groupwise	Novell Groupwise messaging system
+want	I-Phone		Phone service via the Internet
+?	ISAKMP		ISAKMP/IKE key exchange
+want	Kali		Gaming Protocol
+want	Kerberos	Network Authentication Service (ticket granting and checking)
+want	LDAP		Lightweight Directory Access Protocol
+?	Lockd		Lock Daemon
+want	LotusNotes	Groupware for collaborative communication
+want	Marimba		Marimba's Castanet push technology
+want	Micom-VIP	Micom Voice over IP (V/IP)
+?	MSSQ		Microsoft Message Queue Traffic
+want	MS-SQL		Service group for both Microsoft SQL Mon and Server traffic
+?	NetBEUI		Service group for NetBEUI--Network protocol for PCs
+want	NFS		Network File System (both TCP and UDP)
+want	NTP		Network Time Protocol
+?	OpenConnect-JCP Browser-based access to host applications
+want	Oracle		Database application
+want	OSI		OSI over TCP (RFC2126), e.g., Microsoft Exchange X.400
+?	OSPF		Network Routing Information (Open Shortest-Path First)
+want	pcAnywhere	Remote management collaboration tool
+?	PIM		Protocol-Independent Multicast Routing Protocol
+want	PointCast	Push technology application
+want	Printer		UNIX line printer spooler (LPR)
+want	RADIUS		Service group for Remote Authentication Dial-in Service
+?	RC5DES		DES (data encryption standard) encryption-cracking application
+want	RealAudio	Service group for RealAudio streaming audio/video application--both TCP	and UDP
+want	REXEC		UNIX remote execution protocol
+want	RIP		Routing Information Protocol (UDP)
+?	RTCP-B		Real-time control protocol
+?	RTP-B		Real-time protocol
+want?	rwho		Reports current users for all hosts on the local network
+want	SHOUTcast	Streaming audio
+want	SLP		Service Location Protocol
+want	SMS		Microsoft SMS (Systems Management Server) Help Desk
+want	SNA		IBM's Systems Network Architecture protocol
+?	ST2		Internet Stream Protocol, version 2
+?	StreamWorks	StreamWorks Audio and Video
+want	SunRPC		Sun's Remote Procedure Calls (UDP)
+want	Syslog		UNIX System Logging
+?	T.120		Collaboration application
+?	TACACS		Login host protocol
+want	Timbuktu	Timbuktu Pro service group; networked remote control application
+?	TN3287		IBM 3270 print traffic (TN3287 extensions)
+want	UUCP		Unix-to-Unix Copy Protocol
+want	VDOPhone	Service group for Internet telephone application (not auto-discovered)
+want	Whois		Application that identifies the owner of a domain name
+want	WindowsMedia	Microsoft Windows Media Player Streaming
+want	WINS		Windows Internet Name Service
+want	XWindows-DM	XWindows Display Manager (XDMCP)
+
+
+And here are some additional patterns that we'd like to have:
+
+Gadu-gadu - a popular Polish instant messenger protocol (so I'm told)
+Zephyr - an instant messanger

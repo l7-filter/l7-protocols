@@ -1,0 +1,30 @@
+Using these programs, you can:
+
+- test the speed of patterns in user space.
+
+- test whether your pattern matches random data (which is bad).
+
+Start by saying "make".
+
+************************************************************************
+
+To test the speed of the pattern in the file "foo.pat":
+
+./timeit.sh foo.pat
+
+Or to test the pattern "foo|bar":
+
+./timeit.sh 'foo|bar'
+
+You'll find that our regexp library has some performance quirks.  For
+instance, branches are very expensive.  Testing for "foo|bar" takes MUCH
+longer than twice as long as testing for "foo".  Also, parentheses aren't 
+optimized out.  That is, "(foo)" takes MUCH longer than "foo".
+
+***********************************************************************
+
+To test whether your pattern matches random data, run
+
+./test_match.sh foo.pat
+or
+./test_match.sh 'foo|bar'
