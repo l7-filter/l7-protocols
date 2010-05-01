@@ -13,8 +13,9 @@
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 ares
-^\x03\x5a.?.?\x05\x8d\x38
 
+# old pattern: ^\x03\x5a.?.?\x05\x8d\x38
+# 
 # It has been brought to my attention that the second to last byte, \x8d
 # may not actually be consistent.  This seems to be random or time
 # based(?) further testing shows that the byte can be \x39, \x15, \x27,

@@ -1,4 +1,8 @@
-2005 06 0X
+2005 06 17
+Added freenet pattern.  Commented out old pattern in ares.  Fixed minor
+typo in edonkey pattern.
+
+2005 06 04
 Improved ares.  Added note to ntp.
 
 2005 05 27
