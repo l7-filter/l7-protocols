@@ -1,5 +1,6 @@
 # Battlefield 1942 - An EA game
 # Pattern quality: ok veryfast
+# Protocol groups: proprietary game
 #
 # Contributed by Myles Uyema <mylesuyema AT gmail.com>
 #

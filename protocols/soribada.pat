@@ -1,5 +1,6 @@
 # Soribada - A Korean P2P filesharing program/protocol - http://www.soribada.com
 # Pattern quality: good notsofast
+# Protocol groups: p2p
 
 # I am told that there are three versions of this protocol, the first no
 # longer being used.  That would probably explain why incoming searches

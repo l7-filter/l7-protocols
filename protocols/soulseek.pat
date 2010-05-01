@@ -1,5 +1,7 @@
 # Soulseek - P2P filesharing - http://slsknet.org
 # Pattern quality: good veryfast
+# Protocol groups: p2p
+#
 # All my tests show that this pattern is fast, but one user has reported that
 # it is slow.  Your milage may vary.
 

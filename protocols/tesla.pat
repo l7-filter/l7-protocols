@@ -1,5 +1,6 @@
 # Tesla Advanced Communication - P2P filesharing (?)
 # Pattern quality: marginal notsofast
+# Protocol groups: p2p
 #
 # This pattern is untested!
 # Please report on how this pattern works for you at

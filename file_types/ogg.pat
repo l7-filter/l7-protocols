@@ -1,5 +1,6 @@
 # Ogg - Ogg Vorbis music format (not any ogg file, just vorbis)
 # Pattern quality: ok fast
+# Protocol groups: file
 # 
 # If this pattern does not work for you, 
 # or you believe it could be improved, please post to 

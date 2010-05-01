@@ -1,5 +1,7 @@
 # Yahoo messenger - an instant messenger protocol - http://yahoo.com
 # Pattern quality: good veryfast
+# Protocol groups: proprietary chat
+#
 # Usually runs on port 5050 
 #
 # This pattern has been tested and is believed to work well. 

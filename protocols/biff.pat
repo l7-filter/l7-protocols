@@ -1,5 +1,7 @@
 # Biff - new mail notification 
 # Pattern quality: good veryfast undermatch overmatch
+# Protocol groups: mail
+#
 # Usually runs on port 512
 #
 # This pattern is untested.  If it does not

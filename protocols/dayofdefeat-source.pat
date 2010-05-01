@@ -1,5 +1,6 @@
 # Day of Defeat - network game 
 # Pattern quality: good veryfast
+# Protocol groups: proprietary game
 #
 # By Clayton Macleod <cherry twist at gmail dot com>
 #

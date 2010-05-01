@@ -1,5 +1,6 @@
 # CVS - Concurrent Versions System
 # Pattern quality: good veryfast
+# Protocol groups: version_control
 #
 # Please post to l7-filter-developers@lists.sf.net as to whether this pattern 
 # works for you or not.  If you believe it could be improved please post your 

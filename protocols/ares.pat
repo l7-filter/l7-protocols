@@ -1,5 +1,6 @@
 # Ares - P2P filesharing - http://www.aresgalaxy.org
 # Pattern quality: good veryfast undermatch
+# Protocol groups: p2p
 
 # This pattern catches only client-server connect messages.  This is
 # sufficient for blocking, but not for shaping, since it doesn't catch 

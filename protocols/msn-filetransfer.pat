@@ -1,5 +1,6 @@
 # MSN Filetransfers - Filetransfers as used by MSN Messenger
 # Pattern quality: good veryfast
+# Protocol groups: proprietary document_retrieval
 #
 # http://www.hypothetic.org/docs/msn/client/file_transfer.php
 #

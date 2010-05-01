@@ -1,6 +1,8 @@
 # AIM - AOL instant messenger (OSCAR and TOC)
 # Pattern quality: good notsofast
-# Usually runs on port 5190
+# Protocol groups: proprietary chat
+#
+#Usually runs on port 5190
 #
 # This may also match ICQ traffic.
 # 

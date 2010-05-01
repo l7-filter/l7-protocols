@@ -1,5 +1,6 @@
 # (S)NTP - (Simple) Network Time Protocol - RFCs 1305 and 2030
 # Pattern quality: good veryfast overmatch 
+# Protocol groups: internet_standard networking
 #
 # This pattern is tested and is believed to work. If this does not work
 # for you, or you believe it could be improved, please post to

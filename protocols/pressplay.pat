@@ -1,5 +1,6 @@
 # pressplay - A legal music distribution site - http://pressplay.com
 # Pattern quality: ok fast
+# Protocol groups: proprietary document_retrieval
 #
 # This pattern was "contributed" (taken with permission) by the bandwidth 
 # arbitrator project (www.bandwidtharbitrator.com).

@@ -1,5 +1,6 @@
 # Counterstrike (using the new "Source" engine) - network game 
 # Pattern quality: good veryfast
+# Protocol groups: proprietary game
 #
 # By adam.randazzoATgmail.com
 #

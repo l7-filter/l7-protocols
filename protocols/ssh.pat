@@ -1,5 +1,7 @@
 # SSH - Secure SHell
 # Pattern quality: great veryfast
+# Protocol groups: internet_standard remote_access secure
+#
 # usually runs on port 22
 #
 # http://www.ietf.org/internet-drafts/draft-ietf-secsh-transport-22.txt

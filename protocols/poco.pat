@@ -1,5 +1,6 @@
 # POCO and PP365 - Chinese P2P filesharing - http://pp365.com http://poco.cn
 # Pattern quality: ok veryfast
+# Protocol groups: p2p
 #
 # The author of this pattern says it works, but this is unconfirmed. If
 # this pattern does not work for you, or you believe it could be

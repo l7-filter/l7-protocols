@@ -1,5 +1,7 @@
 # SOCKS Version 5 - Firewall traversal protocol - RFC 1928
 # Pattern quality: marginal fast
+# Protocol groups: internet_standard networking
+#
 # Usually runs on port 1080
 # Also useful: http://www.iana.org/assignments/socks-methods
 #

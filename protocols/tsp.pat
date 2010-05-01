@@ -1,5 +1,6 @@
 # TSP - Time Synchronization Protocol
 # Pattern quality: good veryfast overmatch
+# Protocol groups: networking
 #
 # http://ftp.svbug.com/ftp/pub/manuals/pdf/smm.22.timed.pdf
 #

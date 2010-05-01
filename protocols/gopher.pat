@@ -1,5 +1,7 @@
 # Gopher - A precursor to HTTP - RFC 1436
 # Pattern quality: good notsofast undermatch
+# Protocol groups: obsolete internet_standard document_retrieval
+#
 # Usually runs on port 70
 #
 # This pattern is untested.  If it does not

@@ -1,5 +1,6 @@
 # Freenet - Anonymous information retrieval - http://freenetproject.org
 # Pattern quality: marginal veryfast
+# Protocol groups: p2p document_retrieval
 
 freenet
 # Freenet is intentionally hard to identify...

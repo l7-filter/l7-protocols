@@ -1,5 +1,6 @@
 # SIP - Internet telephony - RFC 3261
 # Pattern quality: ok veryfast
+# Protocol groups: internet_standard voip
 #
 # This pattern has been tested with the Ubiquity SIP user agent.
 # 

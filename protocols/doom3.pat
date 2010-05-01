@@ -1,5 +1,6 @@
 # Doom 3 - computer game
 # Pattern quality: good veryfast
+# Protocol groups: proprietary game
 #
 # Thanks to Clayton Macleod (cherrytwist at gmail.com).
 #

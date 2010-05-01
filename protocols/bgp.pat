@@ -1,5 +1,6 @@
 # BGP - Border Gateway Protocol - RFC 1771
 # Pattern quality: ok veryfast
+# Protocol groups: internet_standard networking
 #
 # This pattern is UNTESTED.
 #

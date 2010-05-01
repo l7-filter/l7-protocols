@@ -1,5 +1,7 @@
 # Direct Connect - P2P filesharing - http://www.neo-modus.com
 # Pattern quality: good veryfast
+# Protocol groups: p2p
+#
 # Direct Connect "hubs" listen on port 411
 # Protocol info: http://wza.digitalbrains.com/DC/doc/Introduction.html
 #

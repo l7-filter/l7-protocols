@@ -1,5 +1,6 @@
 # Cisco VPN - VPN client software to a Cisco VPN server
 # Pattern quality: ok veryfast
+# Protocol groups: proprietary remote_access
 # 
 # This pattern contributed by Myles Uyema <myles AT uyema.net>
 #

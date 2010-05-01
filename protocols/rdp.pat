@@ -1,5 +1,6 @@
 # RDP - Remote Desktop Protocol (used in Windows Terminal Services)
 # Pattern quality: ok fast
+# Protocol groups: proprietary remote_access
 #
 # This pattern was submitted by Michael Leong.  It has been tested under the 
 # following conditions: "WinXP Pro with all the patches, rdesktop server 

@@ -1,5 +1,6 @@
 # GoBoogy - A Japanese (?) P2P protocol
 # pattern quality: marginal notsofast
+# Protocol groups: p2p
 # 
 # This pattern is untested and likely does not work in all cases!  If it
 # does not work for you, or you believe it could be improved, please

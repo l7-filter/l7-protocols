@@ -1,5 +1,6 @@
 # 100bao - a Chinese P2P protocol/program - http://www.100bao.com
 # Pattern quality: ok veryfast
+# Protocol groups: p2p
 #
 # The author of this pattern says it works, but this is unconfirmed. If
 # this pattern does not work for you, or you believe it could be

@@ -1,5 +1,7 @@
 # Shoutcast & Icecast - streaming audio
 # Pattern quality: good fast
+# Protocol groups: streaming_audio
+#
 # usually runs on port 80
 #
 # Pattern contributed by Deepak Seshadri <dseshadri AT broadbandmaritime.com>

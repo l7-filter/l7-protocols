@@ -1,5 +1,6 @@
 # FastTrack - P2P filesharing (Kazaa, Morpheus, iMesh, Grokster, etc)
 # Pattern quality: good notsofast
+# Protocol groups: p2p
 #
 # Tested with Kazaa Lite Resurrection 0.0.7.6F
 #

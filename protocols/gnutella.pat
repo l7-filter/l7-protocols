@@ -1,5 +1,6 @@
 # Gnutella - P2P filesharing
 # Pattern quality: good fast
+# Protocol groups: p2p
 #
 # This should match both Gnutella and "Gnutella2" ("Mike's protocol")
 # 

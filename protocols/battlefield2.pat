@@ -1,5 +1,6 @@
 # Battlefield 2 - An EA game.
 # Pattern quality: ok notsofast
+# Protocol groups: proprietary game
 #
 # This pattern is unconfirmed.
 # Please post to l7-filter-developers@lists.sf.net as to whether it works

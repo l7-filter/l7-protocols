@@ -1,5 +1,6 @@
 # hddtemp - Hard drive temperature reporting
 # Pattern quality: great veryfast
+# Protocol groups: monitoring
 # 
 # Usually runs on port 7634
 #

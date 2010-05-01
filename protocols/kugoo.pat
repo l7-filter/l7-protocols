@@ -1,5 +1,6 @@
 # KuGoo - a Chinese P2P program - http://www.kugoo.com
 # Pattern quality: ok veryfast
+# Protocol groups: p2p
 #
 # The author of this pattern says it works, but this is unconfirmed. If
 # this pattern does not work for you, or you believe it could be

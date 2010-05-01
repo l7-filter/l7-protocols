@@ -1,5 +1,6 @@
 # Xunlei - Chinese P2P filesharing - http://xunlei.com
 # Pattern quality: good veryfast
+# Protocol groups: p2p
 #
 # This has been tested by three people.  It definitely catches some
 # streams. If this pattern does not work for you, or you believe it

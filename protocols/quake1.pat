@@ -1,5 +1,6 @@
 # Quake 1 - A popular computer game.
 # Pattern quality: marginal veryfast
+# Protocol groups: proprietary game
 #
 # This pattern is untested and unconfirmed.
 # Please post to l7-filter-developers@lists.sf.net as to whether it works

@@ -1,5 +1,6 @@
 # Half-Life 2 Deathmatch - popular computer game
 # Pattern quality: good veryfast
+# Protocol groups: proprietary game
 # 
 # By Clayton Macleod <cherrytwist TA gmail.com>
 #

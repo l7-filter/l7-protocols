@@ -1,5 +1,6 @@
 # NetBIOS - Network Basic Input Output System
 # Pattern quality: marginal fast
+# Protocol groups: proprietary networking
 #
 # As mentioned in smb.pat:
 #

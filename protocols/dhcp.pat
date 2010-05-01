@@ -1,5 +1,7 @@
 # DHCP - Dynamic Host Configuration Protocol - RFC 1541
 # Pattern quality: good veryfast
+# Protocol groups: internet_standard networking
+#
 # Usually runs on ports 67 (server) and 68 (client)
 #
 # Also matches BOOTP (Bootstrap Protocol (RFC 951)) in the case that 

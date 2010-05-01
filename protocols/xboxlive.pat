@@ -1,5 +1,6 @@
 # XBoxLive - Console gaming
 # pattern quality: marginal notsofast
+# Protocol groups: proprietary game
 #
 # This may match all XBox traffic, or may only match Halo 2 traffic.  
 # We don't know yet.  Please post on l7-filter-developers@lists.sf.net

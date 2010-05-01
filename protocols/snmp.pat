@@ -1,5 +1,7 @@
 # SNMP - Simple Network Management Protocol - RFC 1157
 # Pattern quality: good veryfast
+# Protocol groups: internet_standard networking
+#
 # Usually runs on UDP ports 161 (monitoring) and 162 (traps)
 #
 # These filters match SNMPv1 packets without fail, and are made

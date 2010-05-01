@@ -1,5 +1,6 @@
 # Apple Juice - P2P filesharing - http://www.applejuicenet.de
 # Pattern quality: great veryfast
+# Protocol groups: p2p
 #
 # This pattern has been tested with the Linux version (version
 # 0,29,142,229).  It matches search reqests and file transfers.  If it

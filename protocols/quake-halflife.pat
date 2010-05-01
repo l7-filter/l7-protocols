@@ -1,5 +1,6 @@
 # Half Life 1 engine games (HL 1, Quake 2/3/World, Counterstrike 1.6, etc.)
 # Pattern quality: good veryfast
+# Protocol groups: proprietary game
 #
 # Contributed by Laurens Blankers <laurens AT blankersfamily.com>, who says:
 #

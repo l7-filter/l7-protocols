@@ -1,5 +1,6 @@
 # Citrix ICA - proprietary remote desktop application - http://citrix.com
 # Pattern quality: marginal fast
+# Protocol groups: proprietary remote_access
 # 
 # This pattern is UNTESTED.  Please report your experience with it to
 # l7-filter-developers@lists.sf.net .  This list may be subscribed to at

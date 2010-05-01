@@ -1,5 +1,6 @@
 # Flash - Macromedia Flash.  
 # Pattern quality: good veryfast
+# Protocol groups: file
 # 
 # If this pattern does not
 # work for you, or you believe it could be improved, please post to 

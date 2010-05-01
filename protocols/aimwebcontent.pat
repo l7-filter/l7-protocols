@@ -1,5 +1,6 @@
 # AIM web content - ads/news content downloaded by AOL Instant Messenger
 # Pattern quality: good fast
+# Protocol groups: proprietary chat document_retrieval
 #
 # This pattern has been tested and is believed to work well.  If it does not
 # work for you, or you believe it could be improved, please post to 
