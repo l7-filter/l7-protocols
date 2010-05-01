@@ -1,4 +1,4 @@
-# LPD - Line Printer Daemon Protocol - RFC 1179 - old-style UNIX printing
+# LPD - Line Printer Daemon Protocol (old-style UNIX printing) - RFC 1179
 # Pattern quality: ok veryfast
 #
 # This pattern is untested.  If it does not work for you, or you believe

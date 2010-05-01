@@ -1,4 +1,4 @@
-# GnucleusLAN (the LAN-only version) - Peer-to-peer file sharing
+# GnucleusLAN - LAN-only P2P filesharing
 # Pattern quality: good fast
 #
 # This pattern has been tested and is believed to work well.  If it does not

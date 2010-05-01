@@ -1,3 +1,7 @@
+2005 08 10
+Added soulseek. Noted that tsp can overmatch (saw it match soulseek).
+Cleaned up pattern file headers.
+
 2005 08 09
 Added napster.  Made dhcp faster.
 

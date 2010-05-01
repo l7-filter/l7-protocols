@@ -1,4 +1,4 @@
-# Bittorrent - http://sourceforge.net/projects/bittorrent/
+# Bittorrent - P2P filesharing / publishing tool - http://www.bittorrent.com
 # Pattern quality: great veryfast
 #
 # This pattern has been tested and is believed to work well.  If it does not

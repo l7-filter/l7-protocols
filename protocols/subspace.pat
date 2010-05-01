@@ -1,4 +1,4 @@
-# Subspace - 2D asteroids-style multiplayer space game (http://subspacehq.com)
+# Subspace - 2D asteroids-style multiplayer space game - http://subspacehq.com
 # Pattern quality: marginal veryfast
 #
 # By Myles Uyema <mylesuyema AT gmail.com>

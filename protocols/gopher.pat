@@ -1,4 +1,4 @@
-# Gopher - A precursor to HTTP (RFC 1436)
+# Gopher - A precursor to HTTP - RFC 1436
 # Pattern quality: good veryfast undermatch
 # Usually runs on port 70
 #

@@ -1,4 +1,4 @@
-# OpenFT : P2P network (implemented in giFT library)
+# OpenFT - P2P filesharing (implemented in giFT library)
 # Pattern quality: good fast
 #
 # Please post to l7-filter-developers@lists.sf.net as to whether it works 

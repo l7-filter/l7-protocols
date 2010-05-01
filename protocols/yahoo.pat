@@ -1,4 +1,4 @@
-# Yahoo messenger - an instant messenger protocol (http://yahoo.com)
+# Yahoo messenger - an instant messenger protocol - http://yahoo.com
 # Pattern quality: good veryfast
 # Usually runs on port 5050 
 #

@@ -1,4 +1,4 @@
-# POCO and PP点点通 - Chinese P2P - www.pp365.com www.poco.cn
+# POCO and PP点点通 - Chinese P2P filesharing - http://pp365.com http://poco.cn
 # Pattern quality: ok veryfast
 #
 # The author of this pattern says it works, but this is unconfirmed. If

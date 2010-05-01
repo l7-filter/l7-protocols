@@ -1,4 +1,4 @@
-# Napster - Peer-to-peer file sharing
+# Napster - P2P filesharing
 # Pattern quality: good veryfast
 # 
 # Should work for any Napster offspring, like OpenNAP.

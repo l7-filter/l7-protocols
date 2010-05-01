@@ -1,4 +1,4 @@
-# Skype to phone - UDP voice call (http://skype.com/)
+# Skype to phone - UDP voice call (program to POTS phone) - http://skype.com
 # Pattern Quality : ok fast undermatch overmatch
 
 # Thanks to Myles Uyema, mylesuyema AT gmail.com

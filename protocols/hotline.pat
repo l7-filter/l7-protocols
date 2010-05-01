@@ -1,4 +1,4 @@
-# Hotline - An old P2P protocol
+# Hotline - An old P2P filesharing protocol
 # pattern quality: marginal veryfast
 # 
 # This pattern is untested!  If it does not work for you, or you believe

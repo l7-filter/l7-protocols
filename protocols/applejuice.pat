@@ -1,4 +1,4 @@
-# Apple Juice - P2P filesharing - http://www.applejuicenet.de/
+# Apple Juice - P2P filesharing - http://www.applejuicenet.de
 # Pattern quality: ok fast
 #
 # This pattern is untested.  If it works for you, does not

@@ -1,4 +1,4 @@
-# DNS - Domain Name System (RFC 1035)
+# DNS - Domain Name System - RFC 1035
 # Pattern quality: great fast
 #
 # Please post to l7-filter-developers@lists.sf.net as to whether this pattern 

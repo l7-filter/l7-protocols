@@ -1,4 +1,4 @@
-# Netbios name service
+# NBNS - Netbios name service
 # Pattern quality: good notsofast
 #
 # This pattern has been tested and is believed to work well.  If it does not

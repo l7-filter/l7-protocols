@@ -1,4 +1,4 @@
-# live365 - An Internet radio site (http://live365.com)
+# live365 - An Internet radio site - http://live365.com
 # Pattern quality: marginal fast
 #
 # This pattern was "contributed" (taken with permission) by the bandwidth 

@@ -1,4 +1,4 @@
-# TFTP - Trivial File Transfer Protocol - used for bootstrapping (RFC 1350)
+# TFTP - Trivial File Transfer Protocol - used for bootstrapping - RFC 1350
 # Pattern quality: marginal veryfast
 # usually runs on port 69
 # 

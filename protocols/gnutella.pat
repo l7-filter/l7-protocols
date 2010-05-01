@@ -1,4 +1,4 @@
-# Gnutella - Peer-to-peer file sharing
+# Gnutella - P2P filesharing
 # Pattern quality: good veryfast
 #
 # This should match both Gnutella and "Gnutella2" ("Mike's protocol")

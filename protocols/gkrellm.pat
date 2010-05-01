@@ -1,4 +1,4 @@
-# Gkrellm - a system monitor (http://gkrellm.net)
+# Gkrellm - a system monitor - http://gkrellm.net
 # Pattern quality: good veryfast
 # 
 # This pattern has been tested and is believed to work well. If you have

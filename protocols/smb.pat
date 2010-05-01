@@ -1,4 +1,4 @@
-# Samba/SMB - Server Message Block - Microsoft File Sharing
+# Samba/SMB - Server Message Block - Microsoft Windows filesharing
 # Pattern quality: good fast
 #
 # "This protocol is sometimes also referred to as the Common Internet File 
