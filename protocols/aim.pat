@@ -2,7 +2,7 @@
 # Pattern quality: good notsofast
 # Protocol groups: proprietary chat
 #
-#Usually runs on port 5190
+# Usually runs on port 5190
 #
 # This may also match ICQ traffic.
 # 

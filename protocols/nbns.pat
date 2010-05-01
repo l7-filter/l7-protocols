@@ -1,4 +1,4 @@
-# NBNS - Netbios name service
+# NBNS - NetBIOS name service
 # Pattern quality: good notsofast
 # Protocol groups: networking
 #

@@ -1,6 +1,6 @@
 # HTTP - HyperText Transfer Protocol - RFC 2616
 # Pattern quality: great notsofast
-# Protocol groups: internet_standard document_retrieval
+# Protocol groups: ietf_draft_standard document_retrieval
 #
 # Usually runs on port 80
 #

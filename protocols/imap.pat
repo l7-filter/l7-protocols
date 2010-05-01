@@ -1,6 +1,6 @@
 # IMAP - Internet Message Access Protocol (A common e-mail protocol)
 # Pattern quality: good veryfast
-# Protocol groups: internet_standard networking
+# Protocol groups: ietf_proposed_standard mail
 #
 # This matches IMAP4 (RFC 3501) and probably IMAP2 (RFC 1176)
 #

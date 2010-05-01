@@ -1,6 +1,6 @@
 # SNMP Traps - Simple Network Management Protocol (RFC1157)
 # Pattern quality: good veryfast
-# Protocol groups: internet_standard networking
+# Protocol groups: ietf_internet_standard networking
 #
 # Usually runs on UDP ports 162
 #

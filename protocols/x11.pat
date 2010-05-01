@@ -1,6 +1,6 @@
 # X Windows Version 11 - Networked GUI system used in most Unices
 # Pattern quality: good veryfast
-# Protocol groups: networking
+# Protocol groups: x_consortium_standard remote_access
 #
 # specification: http://www.msu.edu/~huntharo/xwin/docs/xwindows/PROTO.pdf
 # Usually runs on port 6000 (6001 for the second server on a host, etc)

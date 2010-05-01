@@ -1,3 +1,8 @@
+2005 12 16
+Tweaked "pattern group" metadata.  Reserved "networking" for protocols
+that are really nuts and bolts like DNS, DHCP and BGP.  Clarified "internet
+standard" (most actually aren't officially IETF standards).  Improved ares.
+
 2005 12 14
 Added teamspeak, worldofwarcraft.  Added preliminary "pattern group"
 metadata to all of the patterns.

@@ -1,4 +1,4 @@
-# Subspace - 2D asteroids-style multiplayer space game - http://subspacehq.com
+# Subspace - 2D asteroids-style space game - http://beginners.subspace.net
 # Pattern quality: marginal veryfast
 # Protocol groups: game
 #

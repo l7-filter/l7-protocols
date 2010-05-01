@@ -1,6 +1,6 @@
 # rlogin - remote login - RFC 1282
 # Pattern quality: ok veryfast
-# Protocol groups: internet_standard remote_access
+# Protocol groups: ietf_rfc_documented remote_access
 #
 # usually runs on port 443
 #

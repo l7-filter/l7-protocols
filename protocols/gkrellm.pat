@@ -1,6 +1,6 @@
 # Gkrellm - a system monitor - http://gkrellm.net
 # Pattern quality: good veryfast
-# Protocol groups: networking
+# Protocol groups: monitoring
 # 
 # This pattern has been tested and is believed to work well. If you have
 # trouble with this pattern, or you believe it could be improved please

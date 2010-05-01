@@ -1,6 +1,6 @@
 # LPD - Line Printer Daemon Protocol (old-style UNIX printing) - RFC 1179
 # Pattern quality: ok veryfast
-# Protocol groups: internet_standard networking
+# Protocol groups: ietf_rfc_documented networking
 #
 # This pattern is untested.  If it does not work for you, or you believe
 # it could be improved, please post to l7-filter-developers@lists.sf.net

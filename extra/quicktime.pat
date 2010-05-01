@@ -1,6 +1,6 @@
 # Quicktime HTTP 
 # Pattern quality: good fast
-# Protocol groups: streaming_video streaming_audio
+# Protocol groups: ietf_draft_standard streaming_video streaming_audio
 #
 # This pattern has been tested and is believed to work well.  
 # (Quick Time v6.5.1 downloading from www.apple.com/trailers) If it does not

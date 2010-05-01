@@ -1,6 +1,6 @@
 # FTP - File Transfer Protocol - RFC 959
 # Pattern quality: great fast
-# Protocol groups: internet_standard document_retrieval
+# Protocol groups: ietf_internet_standard document_retrieval
 #
 # Usually runs on port 21.  Note that the data stream is on a dynamically
 # assigned port, which means that you will need the FTP connection 

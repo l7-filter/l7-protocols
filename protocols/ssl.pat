@@ -1,6 +1,6 @@
 # SSL and TLS - Secure Socket Layer / Transport Layer Security - RFC 2246
 # Pattern quality: good fast
-# Protocol groups: internet_standard document_retrieval secure
+# Protocol groups: ietf_proposed_standard secure
 #
 # Usually runs on port 443
 #

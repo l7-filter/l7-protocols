@@ -1,6 +1,6 @@
 # Valid certificate SSL 
 # Pattern quality: good notsofast
-# Protocol groups: networking secure
+# Protocol groups: ietf_proposed_standard secure
 
 # This matches anything claiming to use a valid certificate from a well 
 # known certificate authority.

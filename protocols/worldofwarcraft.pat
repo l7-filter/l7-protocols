@@ -1,5 +1,6 @@
 # World of Warcraft - popular network game - http://blizzard.com/
 # Pattern quality: ok veryfast
+# Protocol groups: proprietary game
 #
 # Please report how this pattern works for you at
 # l7-filter-developers@lists.sf.net This list may be subscribed to at

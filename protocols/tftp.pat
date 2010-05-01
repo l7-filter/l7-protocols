@@ -1,6 +1,6 @@
 # TFTP - Trivial File Transfer Protocol - used for bootstrapping - RFC 1350
 # Pattern quality: marginal veryfast
-# Protocol groups: internet_standard document_retrieval
+# Protocol groups: ietf_internet_standard document_retrieval
 #
 # usually runs on port 69
 # 

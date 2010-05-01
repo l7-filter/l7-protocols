@@ -1,6 +1,6 @@
 # NNTP - Network News Transfer Protocol - RFCs 977 and 2980
 # Pattern quality: good veryfast
-# Protocol groups: internet_standard networking 
+# Protocol groups: ietf_proposed_standard
 #
 # usually runs on port 119
 

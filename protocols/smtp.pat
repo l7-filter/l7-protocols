@@ -1,6 +1,6 @@
 # SMTP - Simple Mail Transfer Protocol - RFC 2821 (See also RFC 1869)
 # Pattern quality: great fast
-# Protocol groups: internet_standard networking
+# Protocol groups: ietf_internet_standard mail
 #
 # usually runs on port 25
 # 
