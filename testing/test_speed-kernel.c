@@ -9,6 +9,8 @@ See ../LICENCE for copyright
 
 #include <ctype.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "regexp/regexp.c"
 
 #define MAX 1500
@@ -85,11 +87,11 @@ void doit(regexp * pattern, char ** argv, int verbose)
 		int result = regexec(pattern, input);
 		if(c == 1)
 			if(result)
-				fprintf(stderr, "match\t");
+				printf("match\t");
 			else
-				fprintf(stderr, "no_match\t");
+				printf("no_match\t");
 
-		if(c%(TIMES/20) == 0){ fprintf(stderr, "."); }
+		if(TIMES/20 > 0 && c%(TIMES/20) == 0){ fprintf(stderr, "."); }
 	}
 	if(verbose)
 		puts("");

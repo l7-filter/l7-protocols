@@ -13,14 +13,12 @@ Start by saying "make".
 
 ************************************************************************
 
-To test the speed of the pattern in the file "foo.pat", do, for example: 
+To test the speed of your pattern, use timeit.sh
 
-./timeit.sh foo.pat gnu real
+Run timeit.sh with no arguments for instructions.
 
-Run timeit.sh with no arguments for more syntax information.
-
-You'll find that the Henry Spencer library has some performance quirks.  
-Things we've noticed:
+You'll find that the Henry Spencer (kernel) library has some performance 
+quirks.  Things we've noticed:
 
 - Branches are very expensive.  Testing for "foo|bar" takes much
 longer than twice as long as testing for "foo".  
@@ -31,15 +29,15 @@ longer than twice as long as testing for "foo".
 
 ***********************************************************************
 
-To test whether your pattern matches random data, run
+To test whether your pattern matches random data, run test_match.sh
 
-./test_match.sh foo.pat
-
-See the output of that command for more syntax information.
+Run test_match.sh with no arguments for instructions.
 
 ***********************************************************************
 
 ___DEVELOPER INFORMATION___
+
+1)
 
 The data directory holds packet captures to test against.  The file name
 format is: [protocol]-[optional letter]-[number].  The protocol is the
@@ -53,3 +51,11 @@ the first two packets, and so on.)
 long time before putting them here, so I'm not sure what they are
 exactly, except that they are Ares data and they clearly aren't in the
 1, 1-2, 1-2-3 form described above.)
+
+2) 
+
+Everything here is a kludge held together by chewing gum and masking 
+tape.  Note that test_speed-userspace is the backend for both timeit.sh 
+and test_match.sh for their userspace modes, but for their kernel 
+modes, they use the separate backends test_speed-kernel and 
+match_kernel.  Yuck.

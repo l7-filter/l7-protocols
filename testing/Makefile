@@ -1,10 +1,19 @@
-all:
+all: randchars randprintable test_speed-kernel test_speed-userspace match_kernel
+
+randchars: randchars.c
 	gcc -O2 -o randchars randchars.c
+
+randprintable: randprintable.c
 	gcc -O2 -o randprintable randprintable.c
-	gcc -w -o test_speed-henry test_speed-henry.c
-	gcc -w -o test_speed-gnu   test_speed-gnu.c
-	gcc -w -O2 -o match-henry match-henry.c
-	gcc -w -O2 -o match-gnu   match-gnu.c
+
+test_speed-kernel: test_speed-kernel.c
+	gcc -o test_speed-kernel test_speed-kernel.c
+
+test_speed-userspace: test_speed-userspace.cpp l7-parse-patterns.cpp l7-parse-patterns.h
+	g++ -Wall -o test_speed-userspace test_speed-userspace.cpp l7-parse-patterns.cpp
+
+match_kernel: match-kernel.c
+	gcc -O2 -o match_kernel match-kernel.c
 
 clean:
-	rm -f randprintable randchars test_speed-henry test_speed-gnu match-henry match-gnu
+	rm -f randprintable randchars test_speed-kernel test_speed-userspace match_kernel

@@ -3,10 +3,11 @@
 extract()
 {
 	if [ -r $1 ]; then
-	# this can miss psuedo-valid files that have crap after the pattern
+	# this can miss pseudo-valid files that have crap after the pattern
 		cat $1 | grep -v ^$ | grep -v ^# | tail -1
 	else
-		echo $1
+		echo Arg is not a readable file > /dev/stderr
+		exit 1
 	fi
 }
 
@@ -16,19 +17,18 @@ if [ ! $1 ]; then
 fi
 
 if [ ! $2 ]; then
-	echo Using the GNU \(userspace\) library.
-	echo You can change this by saying \"henry\" as the second arg.
-	matchprog=./match-gnu
-elif [ $2 == "henry" ]; then
-	echo Using the Henry Spencer \(kernel\) regex library.
-	matchprog=./match-henry
-elif [ $2 == "gnu" ]; then
-	echo Using the GNU \(userspace\) library.
-	matchprog=./match-gnu
+	echo Using the userspace pattern and library.
+	echo You can change this by saying \"kernel\" as the second arg.
+	matchprog=./test_speed-userspace
+elif [ $2 == "kernel" ]; then
+	echo Using the kernel pattern and library.
+	matchprog=./match_kernel
+elif [ $2 == "userspace" ]; then
+	echo Using the userspace pattern and library.
+	matchprog=./test_speed-userspace
 else
-	echo Didn\'t understand what library you wanted.
-	echo Using the GNU \(userspace\) library.
-	matchprog=./match-gnu
+	echo Didn\'t understand what you wanted. Using the userspace library.
+	matchprog=./test_speed-userspace
 fi
 
 if [ $3 ]; then
@@ -47,18 +47,26 @@ else
 	exit 1
 fi
 
-printf "Out of $times random streams, this many match: "
+printf "Out of $times completely random streams, this many match: "
 
 pattern="`extract $1`"
 
 for f in `seq $times`; do
 	if [ $3 ]; then printf . > /dev/stderr; fi
-	if ! ./randchars | $matchprog "$pattern"; then exit 1; fi
-done | grep -v No -c
+	if [ $2 ] && [ $2 == "henry" ]; then
+		if ! ./randchars | $matchprog "$pattern"; then exit 1; fi
+	else
+		if ! ./randchars | $matchprog -f $1 -n 1 -v; then exit 1; fi
+	fi
+done | grep -iE '^match' -c
 
-printf "Out of $times printable random streams, this many match: " 
+printf "Out of $times printable random streams, this many match:  " 
 
 for f in `seq $times`; do
 	if [ $3 ]; then printf . > /dev/stderr; fi
-	if ! ./randprintable | $matchprog "$pattern"; then exit 1; fi
-done | grep -v No -c
+	if [ $2 ] && [ $2 == "henry" ]; then
+		if ! ./randprintable | $matchprog "$pattern"; then exit 1; fi
+	else
+		if ! ./randprintable | $matchprog -v -n 1 -f $1; then exit 1; fi
+	fi
+done | grep -iE '^match' -c

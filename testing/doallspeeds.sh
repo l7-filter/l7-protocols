@@ -5,31 +5,31 @@
 # Relies on output format of ./timeit.sh
 
 if [ ! $1 ]; then
-	gnu=1
-	henry=1
-elif [ $1 == "gnu" ]; then
-	gnu=1
-elif [ $1 == "henry" ]; then
-	henry=1
+	userspace=1
+	kernel=1
+elif [ $1 == "userspace" ]; then
+	userspace=1
+elif [ $1 == "kernel" ]; then
+	kernel=1
 else
-	echo huh?  Say \"gnu\", \"henry\" or nothing.
+	echo huh?  Say \"userspace\", \"kernel\" or nothing.
 	exit 1
 fi
 
 printf proto
-if [ $gnu ]; then printf \\tgnu; fi
-if [ $henry ]; then printf \\thenry; fi
+if [ $userspace ]; then printf \\tuserspace; fi
+if [ $kernel ]; then printf \\tkernel; fi
 printf \\n
 
 for f in ../*/*.pat; do 
 	printf `basename $f .pat`
 
-	if [ $gnu ]; then 
-		gtime=`./timeit.sh $f gnu   real | grep Total | cut -d\  -f 2`
+	if [ $userspace ]; then 
+		gtime=`./timeit.sh $f userspace   real | grep Total | cut -d\  -f 2`
 		printf \\t$gtime
 	fi
-	if [ $henry ]; then 
-		htime=`./timeit.sh $f henry real | grep Total | cut -d\  -f 2`
+	if [ $kernel ]; then 
+		htime=`./timeit.sh $f kernel real | grep Total | cut -d\  -f 2`
 		printf \\t$htime
 	fi
 	printf \\n
