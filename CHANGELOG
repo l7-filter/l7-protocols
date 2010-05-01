@@ -1,3 +1,6 @@
+2005 08 09
+Added napster.  Made dhcp faster.
+
 2005 08 06
 Added "overmatch" to skypeout.  Improved gnutella (is much faster and no 
 longer attempts to match gnutella web cache HTTP connections).

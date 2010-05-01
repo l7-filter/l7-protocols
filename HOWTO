@@ -33,7 +33,7 @@ you CANNOT use bounds ("foo{3}"), character classes ("[[:punct:]]") or
 backreferences. 
 
 In addition, we've added perl-style hex matching using \xHH notation (so
-to match a tab, use "\x09").  Note that regexp control characters, are
+to match a tab, use "\x09").  Note that regexp control characters are
 still control characters even when written in hex:
 
 \x24 == $ (only matters if it's the last character)

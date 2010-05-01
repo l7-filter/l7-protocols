@@ -13,7 +13,7 @@
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 dhcp
-^(\x01|\x02)[\x01- ]\x06.*c\x82sc
+^[\x01\x02][\x01- ]\x06.*c\x82sc
 
 # Let's break that down:
 #
