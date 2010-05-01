@@ -23,5 +23,5 @@
 # earlier in your iptables rules than HTTP.
 
 httpaudio
-http/(0\.9|1\.0|1\.1)[1-5][0-9][0-9][\x09-\x0d -~]*(content-type: audio)
+http/(0\.9|1\.0|1\.1)[\x09-\x0d ][1-5][0-9][0-9][\x09-\x0d -~]*(content-type: audio)
 

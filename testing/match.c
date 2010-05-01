@@ -56,7 +56,7 @@ int main(int argc, char ** argv)
 	int patternlen, inputlen = 0, c = 0;
 
 	if(!argv[1]){
-		fprintf(stderr, "need an arg\n");
+		fprintf(stderr, "need an arg (the pattern)\n");
 		return 1;
 	}
 	patternlen = strlen(s);

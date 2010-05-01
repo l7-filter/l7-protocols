@@ -71,7 +71,6 @@ want	RIP		Routing Information Protocol (UDP)
 ?	RTCP-B		Real-time control protocol
 ?	RTP-B		Real-time protocol
 want?	rwho		Reports current users for all hosts on the local network
-want	SHOUTcast	Streaming audio
 want	SLP		Service Location Protocol
 want	SMS		Microsoft SMS (Systems Management Server) Help Desk
 want	SNA		IBM's Systems Network Architecture protocol

@@ -1,16 +1,22 @@
 This is a guide for writing patterns for l7-filter.  If you want a HOWTO
-for _using_ l7-filter, see http://l7-filter.sf.net
+for /using/ l7-filter, see http://l7-filter.sf.net/L7-HOWTO-Netfilter
 
 *** File Format ***
 
-A pattern file consists of the name of the protocol on one line followed
-by a regular expression defining that protocol on one line.  Lines
-starting with '#' and blank lines are ignored.  The name of the file
-must match the protocol defined in it.  i.e. if the protocol is "ftp",
-the file must be called "ftp.pat".
+A pattern file consists of:
 
-Additionally, to be displayed nicely on the webpage, the top lines should
-look like this:
+- The name of the protocol on one line
+- A regular expression defining that protocol on one line
+
+Lines starting with '#', blank lines and any lines after the regular
+expression line are ignored.  
+
+The name of the file must match the protocol defined in it.  i.e. if the
+protocol is "ftp", the file must be called "ftp.pat".
+
+Additionally, pattern files that are part of the official distribution
+need some metadata at the top for display on the webpage. The top lines
+should look like this:
 
 # <Protocol name and some concise detail about the protocol>
 # Pattern quality: <great|good|ok|marginal|poor>
@@ -21,27 +27,27 @@ and then have one of "great", "good", "ok", "marginal" or "poor".
 
 *** Regular Expressions ***
 
-At the moment, l7-filter uses V8 regular expresions (see
-http://www.hmug.org/man/3/regsub.html).  In addition, we have added the
-capability to do perl-style hex matches using the \xHH notation (i.e. to
-match a tab, use \x09).  Note that our regexps are more limited than the
-ones you may be used to. Notably, you CANNOT use bounds ("foo{3}" to
-match foofoofoo), character classes ("[[:punct:]]" to match any
-punctuation) or backreferences.  
+l7-filter uses V8 regular expresions (see
+http://www.hmug.org/man/3/regsub.html) plus perl-style hex matching
+using \xHH notation (so to match a tab, use \x09).  This means that our
+regexps may be more limited than ones you are used to. Notably, you
+CANNOT use bounds ("foo{3}" to match foofoofoo), character classes
+("[[:punct:]]" to match any punctuation) or backreferences. 
 
-If you want to check for printable characters, including whitespace,
-[\x09-\0d -~] is a reasonable way of doing it.  (Don't just use "." if
-you can help it.)
+l7-filter is case insensitive.  Using upper case in patterns is
+identical to using lower case.
 
-l7-filter is case insensitive.  Using upper case in your patterns is
-identical to using lower case.  This is largly because our regexp
-implementation doesn't have a case-insensitivity flag.
-
-l7-filter strips out nulls (0x00 bytes) in the packets it reads so that
-it can treat them as normal C strings.  Therefore, you can't match on
-nulls.  Also, fields may appear shorter than expected.  For example, if
-a protocol has a 4 byte field and any of those bytes can be null, the
+l7-filter strips out nulls (\x00 bytes) in the packets it reads (so that
+it can treat them as normal C strings).  So you can't match on nulls. 
+Also, fields may appear shorter than expected.  For example, if a
+protocol has a 4 byte field and any of those bytes can be null, the
 field can appear to be any length from 0 to 4.
+
+Useful things:
+
+[\x09-\x0d -~] = printable characters, including whitespace
+[\x09-\x0d ] = any whitespace
+[!-~] = non-whitespace printable characters
 
 *** What The Classifier Sees ***
 
@@ -63,7 +69,7 @@ There are two general guidelines:
 
 	Example 1: The pattern "bear" for Bearshare is not specific enough. 
 	This pattern could match a wide variety of non-Bearshare connections. 
-	For instance a HTTP request for http://bear.com would be matched.
+	For instance, an HTTP request for http://bear.com would be matched.
 
 	Example 2: "220 .*ftp.*(\[.*\]|\(.*\))" for FTP is too specific.  
 	Not all servers send ()s or []s after their 220.  In fact, servers 

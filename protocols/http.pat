@@ -18,6 +18,5 @@ http
 # As specified in rfc 2616 a status code is preceeded and followed by a
 # space. 
 http/(0\.9|1\.0|1\.1) [1-5][0-9][0-9] [\x09-\x0d -~]*(connection:|content-type:|content-length:)|post [\x09-\x0d -~]* http/[01]\.[019]
-
 # old patterns:
 #(http[\x09-\x0d -~]*(200 ok|302 |304 )[\x09-\x0d -~]*(connection:|content-type:|content-length:))|^(post [\x09-\x0d -~]* http/)

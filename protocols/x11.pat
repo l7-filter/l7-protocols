@@ -14,4 +14,4 @@ x11
 # \x0b = protocol-major-version 11.
 # For some reason, protocol-minor-version is 0, not 6, so can't match it.
 # This pattern is too general. 
-^(l|B).?\x0b
+^[lb].?\x0b

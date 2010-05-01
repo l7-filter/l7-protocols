@@ -1,3 +1,12 @@
+2005 01 20
+- gnutella now matches UDP Gnutella packets as well as TCP.  
+- Removed bearshare and winmx (just use gnutella).  
+- Improved jabber.
+- Trivial change to x11.
+- Fixed httpaudio, httpvideo, httpcachehit and httpcachemiss, which were
+all missing a [\x09-\x0d ].
+- Added ssdp.
+
 2005 01 17
 Fixed http-itunes and battlefield1942 (file names didn't match protocol 
 names in file...).  Improved yahoo.
