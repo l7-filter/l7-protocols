@@ -1,6 +1,7 @@
-# iMesh - a P2P application
-# Pattern quality: ok fast
-# Pattern groups: p2p
+# iMesh - the native protocol of iMesh, a P2P application - http://imesh.com
+# Pattern attributes: ok fast
+# Protocol groups: p2p
+# Wiki:   http://protocolinfo.org/wiki/iMesh
 #
 # depending on the version of iMesh (the program), it can also use fasttrack,
 # gnutella and edonkey in addition to iMesh (the protocol).

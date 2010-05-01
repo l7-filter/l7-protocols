@@ -1,6 +1,7 @@
 # eDonkey2000 - P2P filesharing - http://edonkey2000.com and others
-# Pattern quality: good veryfast overmatch
+# Pattern attributes: good veryfast overmatch
 # Protocol groups: p2p
+# Wiki: http://www.protocolinfo.org/wiki/EDonkey
 #
 # Tested recently (April/May 2006) with eMule 0.47a and eDonkey2000 1.4
 # and a long time ago with something else. 
@@ -8,10 +9,6 @@
 # In addition to matching what you might expect, this matches much of
 # what eMule does when you tell it to only connect to the KAD network. 
 # I don't quite know what to make of this.
-#
-# To get or provide more information about this protocol and/or pattern:
-# http://www.protocolinfo.org/wiki/EDonkey
-# http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 # Thanks to Matt Skidmore <fox AT woozle.org>
 

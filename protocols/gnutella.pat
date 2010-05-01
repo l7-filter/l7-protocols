@@ -1,6 +1,7 @@
 # Gnutella - P2P filesharing
-# Pattern quality: good fast
+# Pattern attributes: good fast
 # Protocol groups: p2p
+# Wiki: http://www.protocolinfo.org/wiki/Gnutella
 #
 # This should match both Gnutella and "Gnutella2" ("Mike's protocol")
 # 
@@ -8,10 +9,6 @@
 # GTK-gnutella, Gnucleus, Gnotella, LimeWire, iMesh and BearShare.
 # 
 # This is tested with gtk-gnutella and Shareaza.
-#
-# To get or provide more information about this protocol and/or pattern:
-# http://www.protocolinfo.org/wiki/Gnutella
-# http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 # http://www.gnutella2.com/tiki-index.php?page=UDP%20Transceiver
 # http://rfc-gnutella.sf.net/

@@ -1,15 +1,12 @@
 # Bittorrent - P2P filesharing / publishing tool - http://www.bittorrent.com
-# Pattern quality: good veryfast undermatch
+# Pattern attributes: good veryfast undermatch
 # Protocol groups: p2p
+# Wiki: http://www.protocolinfo.org/wiki/Bittorrent
 #
 # This pattern has been tested and is believed to work well.
 # It will, however, not work on bittorrent streams that are encrypted, since
 # it's impossible to match encrypted data (unless the encryption is extremely 
 # weak, like rot13 or something...).
-#
-# To get or provide more information about this protocol and/or pattern:
-# http://www.protocolinfo.org/wiki/Bittorrent
-# http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 bittorrent
 

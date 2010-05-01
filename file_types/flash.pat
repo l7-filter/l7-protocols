@@ -1,9 +1,6 @@
 # Flash - Macromedia Flash.  
-# Pattern quality: good veryfast
+# Pattern attributes: good veryfast subset
 # Protocol groups: file
-# 
-# To discuss this pattern:
-# http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 # Thanks to Brandon Enright {bmenrigh AT ucsd.edu}
 

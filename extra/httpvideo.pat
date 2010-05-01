@@ -1,6 +1,7 @@
 # HTTP - Video over HyperText Transfer Protocol (RFC 2616)
-# Pattern quality: good fast
+# Pattern attributes: good fast subset
 # Protocol groups: ietf_draft_standard streaming_video document_retrieval
+# Wiki: http://protocolinfo.org/wiki/HTTP
 #
 # Usually runs on port 80
 #

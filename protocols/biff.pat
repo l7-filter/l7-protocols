@@ -1,13 +1,11 @@
 # Biff - new mail notification 
-# Pattern quality: good veryfast undermatch overmatch
+# Pattern attributes: good veryfast undermatch overmatch
 # Protocol groups: mail
+# Wiki: http://www.protocolinfo.org/wiki/Biff
 #
 # Usually runs on port 512
 #
-# To get or provide more information about this protocol and/or pattern:
-# http://www.protocolinfo.org/wiki/Biff
-# http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
-
+# This pattern is completely untested.
 
 biff
 # This is a rare case where we will specify a $ (end of line), since

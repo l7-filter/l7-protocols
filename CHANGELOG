@@ -1,3 +1,9 @@
+2006 05 29
+Reformatted wiki links for webpage parsing.  Fixed gkrellm.  Moved
+pressplay to extra/.  Renamed "pattern quality" "pattern attributes". 
+Added the attributes "superset" and "subset".  Added http-freshdownload.
+Downgraded skypeout to "marginal".
+
 2006 05 21
 Added http-dap and imesh.
 

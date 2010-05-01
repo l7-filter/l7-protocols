@@ -1,16 +1,11 @@
 # Skype to Skype - UDP voice call (program to program) - http://skype.com
-# Pattern Quality : marginal veryfast overmatch
-# Protocol groups: proprietary voip
-
-# To get or provide more information about this protocol and/or pattern:
-# http://www.protocolinfo.org/wiki/Skype
-# http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
+# Pattern attributes: marginal veryfast overmatch
+# Protocol groups: proprietary voip p2p
+# Wiki: http://www.protocolinfo.org/wiki/Skype
 
 # Thanks to Myles Uyema, mylesuyema AT gmail.com
 
 skypetoskype
-^..\x02
-
-# This might work.  I'm waiting for more information.
-#^..\x02..........................
+# require at least 16 bytes (my limited tests always get at least 18)
+^..\x02.............
 

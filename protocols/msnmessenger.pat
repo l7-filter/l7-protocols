@@ -1,16 +1,13 @@
 # MSN Messenger - Microsoft Network chat client
-# Pattern quality: good notsofast
+# Pattern attributes: good notsofast
 # Protocol groups: proprietary chat
+# Wiki: http://www.protocolinfo.org/wiki/MSN_Messenger
 #
 # Usually uses TCP port 1863
 # http://www.hypothetic.org/docs/msn/index.php
 # http://msnpiki.msnfanatic.com/
 #
 # This pattern has been tested and is believed to work well.
-#
-# To get or provide more information about this protocol and/or pattern:
-# http://www.protocolinfo.org/wiki/MSN_Messenger
-# http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 msnmessenger
 

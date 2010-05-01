@@ -1,16 +1,12 @@
 # Skype to phone - UDP voice call (program to POTS phone) - http://skype.com
-# Pattern Quality : ok fast undermatch overmatch
-# Protocol groups: proprietary voip
-
-# To get or provide more information about this protocol and/or pattern:
-# http://www.protocolinfo.org/wiki/Skype
-# http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
+# Pattern attributes: marginal fast undermatch overmatch
+# Protocol groups: proprietary voip p2p
+# Wiki: http://www.protocolinfo.org/wiki/Skype
 
 # Thanks to Myles Uyema, mylesuyema AT gmail.com
 
 # This is difficult to match.  You might also want to try 
 # "iptables -t mangle -A FORWARD -p udp -m length --length 65:66"
-# See http://protocolinfo.org/wiki/Skype
 
 # Taken using Ethereal traces of Windows Skype v1.2.037
 # Protocol changes in Skype likely made first pattern obsolete
@@ -39,6 +35,8 @@
 #00 6b 88 61 1a 09 e9
 #00 6b 88 61 47 43 c4
 #00 6b 88 61 47 43 c4
+
+# It now appears that this does not work at all.
 
 skypeout
 # Scary.  Our regular expressions suck. (This pattern is "fast", surprisingly.)

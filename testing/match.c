@@ -70,21 +70,17 @@ int main(int argc, char ** argv)
 
 	pattern = regcomp(s, &patternlen);
 
-	for(c = 0; c < MAX; c++)
-	{
+	for(c = 0; c < MAX; c++){
 		// assumes there's plenty to eat
 		input[inputlen] = getchar();
 		inputlen++;
 	}
 	input[inputlen] = '\0';
 
-	for(c = 0; c < inputlen; c++)
-		input[c] = tolower(input[c]);
+	for(c = 0; c < inputlen; c++)	input[c] = tolower(input[c]);
 
-	if(regexec(pattern, input))
-		printf("Match\n");
-	else
-		printf("No match\n");
+	if(regexec(pattern, input))	puts("Match");
+	else				puts("No match");
 
 	return 0;
 

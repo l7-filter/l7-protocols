@@ -3,6 +3,7 @@
 extract()
 {
 	if [ -r $1 ]; then
+	# this can miss psuedo-valid files that have crap after the pattern
 		cat $1 | grep -v ^$ | grep -v ^# | tail -1
 	else
 		echo $1
@@ -28,20 +29,18 @@ else
 	exit 1
 fi
 
-for arg in $@; do
-	echo $arg
+printf "Out of $times random streams, this many match: "
 
-	printf "Out of $times random streams, this many match: "
+pattern="`extract $1`"
 
-	for f in `seq $times`; do
-		if [ $2 ]; then printf . > /dev/stderr; fi
-		if ! ./randchars | ./match "`extract $arg`"; then exit 1; fi
-	done | grep -v No -c
+for f in `seq $times`; do
+	if [ $2 ]; then printf . > /dev/stderr; fi
+	if ! ./randchars | ./match $pattern; then exit 1; fi
+done | grep -v No -c
 
-	printf "Out of $times printable random streams, this many match: " 
+printf "Out of $times printable random streams, this many match: " 
 
-	for f in `seq $times`; do
-		if [ $2 ]; then printf . > /dev/stderr; fi
-		if ! ./randprintable | ./match "`extract $arg`"; then exit 1; fi
-	done | grep -v No -c
-done
+for f in `seq $times`; do
+	if [ $2 ]; then printf . > /dev/stderr; fi
+	if ! ./randprintable | ./match $pattern; then exit 1; fi
+done | grep -v No -c

@@ -1,6 +1,7 @@
-# Download Accelerator Plus (http://www.speedbit.com/) 
-# Pattern quality: good fast
-# Protocol groups:
+# HTTP by Download Accelerator Plus - http://www.speedbit.com
+# Pattern attributes: good fast subset
+# Protocol groups: ietf_draft_standard document_retrieval
+# Wiki: http://protocolinfo.org/wiki/HTTP
 #
 # Uses HTTP to download.
 

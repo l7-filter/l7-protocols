@@ -1,12 +1,9 @@
 # Battlefield 2 - An EA game.
-# Pattern quality: ok notsofast
+# Pattern attributes: ok notsofast
 # Protocol groups: proprietary game
+# Wiki: http://www.protocolinfo.org/wiki/Battlefield_2
 #
 # This pattern is unconfirmed.
-#
-# To get or provide more information about this protocol and/or pattern:
-# http://www.protocolinfo.org/wiki/Battlefield_2
-# http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 
 battlefield2

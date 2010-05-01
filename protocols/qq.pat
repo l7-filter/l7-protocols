@@ -1,14 +1,11 @@
 # Tencent QQ Protocol - Chinese instant messenger protocol - http://www.qq.com
-# Pattern quality: good veryfast
+# Pattern attributes: good veryfast
 # Protocol groups: chat
+# Wiki: http://www.protocolinfo.org/wiki/QQ
 #
 # Over six million people use QQ in China, according to wsgtrsys.
 # 
 # This pattern has been tested and is believed to work well.
-#
-# To get or provide more information about this protocol and/or pattern:
-# http://www.protocolinfo.org/wiki/QQ
-# http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 #
 # QQ uses three (two?) methods to connect to server(s?).
 # one is udp, and another is tcp
