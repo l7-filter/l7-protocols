@@ -1,5 +1,7 @@
 # Soulseek - P2P filesharing - http://slsknet.org
 # Pattern quality: good veryfast
+# All my tests show that this pattern is fast, but one user has reported that
+# it is slow.  Your milage may vary.
 
 # This has been tested and works for "pierce firewall" commands and file
 # transfers.  It does *not* match all the various sorts of chatter that go on, 

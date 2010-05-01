@@ -1,5 +1,7 @@
 # Napster - P2P filesharing
 # Pattern quality: good veryfast
+# All my tests show that this pattern is fast, but one user has reported that
+# it is slow.  Your milage may vary.
 # 
 # Should work for any Napster offspring, like OpenNAP.
 # (Yes, people still use this!)

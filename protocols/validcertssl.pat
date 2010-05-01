@@ -1,8 +1,14 @@
-# Valid certificate SSL - Anything tunneled through SSL (i.e. HTTPS, IMAPS) 
+# Valid certificate SSL 
 # Pattern quality: good notsofast
 
 # This matches anything claiming to use a valid certificate from a well 
 # known certificate authority.
+#
+# This is a subset of ssl, so it needs to come first to match.
+#
+# Note that opening a website that has a valid certificate will 
+# open one connection that matches this and many ssl connections that
+# only match the ssl pattern.  Thus, this pattern may not be very useful.
 #
 # This pattern is believed match only the above, but may not match all
 # of it. Please post to l7-filter-developers@lists.sf.net as to whether
@@ -17,4 +23,4 @@
 # a different rule
 
 validcertssl
-server-certs@thawte\.com|equifax secure certificate authority|rsa data security, inc|verisign, inc|gte cybertrust root|entrust\.net limited
+^.?.?\x01\x03\x01?.*\x0b.*(thawte|equifax secure certificate authority|rsa data security, inc|verisign, inc|gte cybertrust root|entrust\.net limited)

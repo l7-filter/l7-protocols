@@ -1,4 +1,4 @@
-# KuGoo - a Chinese P2P program - www.kugoo.com
+# KuGoo - a Chinese P2P program - http://www.kugoo.com
 # Pattern quality: ok veryfast
 #
 # The author of this pattern says it works, but this is unconfirmed. If

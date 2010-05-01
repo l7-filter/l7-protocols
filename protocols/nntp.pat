@@ -16,5 +16,5 @@ nntp
 # so it's quite possible that this pattern will miss some nntp traffic.)
 ^(20[01][\x09-\x0d -~]*AUTHINFO USER|20[01][\x09-\x0d -~]*news)
 
-# same thing, slightly more accurate, but about 8 times slower
-#20[01][\x09-\x0d -~]*\x0d\x0a[\x09-\x0d -~]*AUTHINFO USER|20[01][\x09-\x0d -~]*news
+# same thing, slightly more accurate, but 100+ times slower
+#^20[01][\x09-\x0d -~]*\x0d\x0a[\x09-\x0d -~]*AUTHINFO USER|20[01][\x09-\x0d -~]*news

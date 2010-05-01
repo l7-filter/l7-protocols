@@ -72,6 +72,7 @@ int main(int argc, char ** argv)
 
 	for(c = 0; c < MAX; c++)
 	{
+		// assumes there's plenty to eat
 		input[inputlen] = getchar();
 		inputlen++;
 	}

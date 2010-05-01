@@ -1,4 +1,12 @@
-2005 08 XX
+2005 09 03
+irc now allows MIRC color codes. Fixed commented out dns and nntp
+patterns. Added a set of real data to speed testing program.
+Corrected/updated speed ratings of finger, dns, gopher, ftp, smtp. Made
+gnutella faster. Changed tls to ssl; it catches SSLv3 now. Improved
+validcertssl: it's faster and catches more. Added speed comments to
+napster and soulseek.
+
+2005 08 24
 Small improvements to napster (* --> +).
 Added UDP junk to bittorent, but commented out until it's confirmed.
 Added xunlei.

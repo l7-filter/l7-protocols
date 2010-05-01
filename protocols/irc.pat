@@ -14,7 +14,7 @@
 
 irc
 # First thing that happens is that the client sends NICK and USER, in 
-# either order.
-# I'd rather this were less inclusive...
-^(nick[\x09-\x0d -~]*user[\x09-\x0d -~]*:|user[\x09-\x0d -~]*:[\x09-\x0d -~]*nick[\x09-\x0d -~]*\x0d\x0a)
+# either order.  This allows MIRC color codes (\x02-\x0d instead of
+# \x09-\x0d).
+^(nick[\x09-\x0d -~]*user[\x09-\x0d -~]*:|user[\x09-\x0d -~]*:[\x02-\x0d -~]*nick[\x09-\x0d -~]*\x0d\x0a)
 
