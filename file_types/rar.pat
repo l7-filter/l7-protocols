@@ -7,4 +7,4 @@
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 rar
-rar\x04\x14
+rar\x21\x1a\x07

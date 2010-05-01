@@ -1,7 +1,6 @@
 Using these programs, you can:
 
 - test the speed of patterns in user space.
-
 - test whether your pattern matches random data (which is bad).
 
 Start by saying "make".
@@ -20,6 +19,8 @@ You'll find that our regexp library has some performance quirks.  For
 instance, branches are very expensive.  Testing for "foo|bar" takes MUCH
 longer than twice as long as testing for "foo".  Also, parentheses aren't 
 optimized out.  That is, "(foo)" takes MUCH longer than "foo".
+
+To test all patterns, run "./test_all.pat".
 
 ***********************************************************************
 

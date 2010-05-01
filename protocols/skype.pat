@@ -1,1 +1,1 @@
-skypeout.pat
+/tmp/file-roller.25230.0/l7-protocols-2005-05-18/protocols/skypeout.pat
