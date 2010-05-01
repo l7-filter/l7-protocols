@@ -2,6 +2,10 @@
 # Pattern quality: marginal veryfast
 # Protocol groups: game
 #
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/Subspace
+# http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
+#
 # By Myles Uyema <mylesuyema AT gmail.com>
 #
 # This pattern matches the initial 2 packets of the client-server

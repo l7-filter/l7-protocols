@@ -10,9 +10,10 @@
 #
 # http://www.ubiqx.org/cifs/SMB.html
 #
-# This pattern is barely tested.  If it does not work for you, or you
-# believe it could be improved, please post to
-# l7-filter-developers@lists.sf.net .  This list may be subscribed to at
+# This pattern is lightly tested.
+#
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/SMB
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 smb

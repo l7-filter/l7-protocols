@@ -4,10 +4,11 @@
 #
 # Usually runs on port 512
 #
-# This pattern is untested.  If it does not
-# work for you, or you believe it could be improved, please post to 
-# l7-filter-developers@lists.sf.net .  This list may be subscribed to at
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/Biff
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
+
+
 biff
 # This is a rare case where we will specify a $ (end of line), since
 # this is the entirety of the communication.

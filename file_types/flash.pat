@@ -2,9 +2,7 @@
 # Pattern quality: good veryfast
 # Protocol groups: file
 # 
-# If this pattern does not
-# work for you, or you believe it could be improved, please post to 
-# l7-filter-developers@lists.sf.net .  This list may be subscribed to at
+# To discuss this pattern:
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 # Thanks to Brandon Enright {bmenrigh AT ucsd.edu}

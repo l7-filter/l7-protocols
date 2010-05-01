@@ -4,9 +4,10 @@
 #
 # This matches IMAP4 (RFC 3501) and probably IMAP2 (RFC 1176)
 #
-# This pattern has been tested and is believed to work well.  If it does not
-# work for you, or you believe it could be improved, please post to 
-# l7-filter-developers@lists.sf.net .  This list may be subscribed to at
+# This pattern has been tested and is believed to work well.
+#
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/IMAP
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 # 
 # This matches the IMAP welcome message or a noop command (which for 

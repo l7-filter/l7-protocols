@@ -6,9 +6,10 @@
 # assigned port, which means that you will need the FTP connection 
 # tracking module in your kernel to usefully match FTP data transfers.
 # 
-# This pattern is well tested.  If it does not
-# work for you, or you believe it could be improved, please post to 
-# l7-filter-developers@lists.sf.net .  This list may be subscribed to at
+# This pattern is well tested.
+#
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/FTP
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 #
 # Matches the first two things a server should say.  Most servers say 

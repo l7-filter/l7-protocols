@@ -1,3 +1,11 @@
+2006 01 15
+ventrilo ok -> good, skypetoskype good -> marginal.
+Improved gopher (it actually didn't work at all before, like anyone cared :-)).
+Added wiki links to every pattern file.
+Added http-rtsp.
+Improved msn-filetransfer: now should match MSNSLP.
+Updated comments in directconnect.
+
 2006 01 08 17
 Fixed stupid error in ventrilo.
 

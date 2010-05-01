@@ -2,12 +2,11 @@
 # Pattern quality: great notsofast
 # Protocol groups: ietf_internet_standard networking
 #
-# Please post to l7-filter-developers@lists.sf.net as to whether this pattern 
-# works for you or not.  If you believe it could be improved please post your 
-# suggestions to that list as well. You may subscribe to this list at 
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/DNS
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
-# Thanks to Sebastien Bechet <s.bechet AT av7.net> for TLD detection 
+# Thanks to Sebastien Bechet <s.bechet AT av7.net> for TLD detection
 # improvements
 
 # While RFC 2181 says "Occasionally it is assumed that the Domain Name

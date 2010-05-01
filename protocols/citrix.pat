@@ -2,8 +2,10 @@
 # Pattern quality: marginal fast
 # Protocol groups: proprietary remote_access
 # 
-# This pattern is UNTESTED.  Please report your experience with it to
-# l7-filter-developers@lists.sf.net .  This list may be subscribed to at
+# This pattern is UNTESTED.
+
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/Citrix
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 # This is based on decode_citrix in dsniff 2.4.

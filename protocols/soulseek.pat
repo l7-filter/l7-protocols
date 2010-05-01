@@ -9,9 +9,8 @@
 # transfers.  It does *not* match all the various sorts of chatter that go on, 
 # such as searches, pings and whatnot.
 
-# If it does not work for you, or you believe it could be improved,
-# please post to l7-filter-developers@lists.sf.net .  This list may be
-# subscribed to at
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/Soulseek
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 soulseek

@@ -8,8 +8,8 @@
 # matches the actual UDP voice traffic, not the TeamSpeak web interface
 # or "TCP query".
 #
-# Please report how this pattern works for you at
-# l7-filter-developers@lists.sf.net This list may be subscribed to at
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/TeamSpeak
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 teamspeak

@@ -2,8 +2,8 @@
 # Pattern quality: ok veryfast
 # Protocol groups: proprietary game
 #
-# Please report how this pattern works for you at
-# l7-filter-developers@lists.sf.net This list may be subscribed to at
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/World_of_Warcraft
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 worldofwarcraft

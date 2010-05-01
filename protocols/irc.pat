@@ -8,9 +8,10 @@
 # must have the IRC connection tracking module in your kernel to classify
 # this.
 #
-# This pattern has been tested and is believed to work well.  If it does not
-# work for you, or you believe it could be improved, please post to 
-# l7-filter-developers@lists.sf.net .  This list may be subscribed to at
+# This pattern has been tested and is believed to work well.
+#
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/IRC
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 irc

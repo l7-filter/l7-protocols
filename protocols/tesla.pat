@@ -3,9 +3,9 @@
 # Protocol groups: p2p
 #
 # This pattern is untested!
-# Please report on how this pattern works for you at
-# l7-filter-developers@lists.sf.net .  If you can improve on this pattern, 
-# please also post to that list. You may subscribe at 
+#
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/Tesla
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 # This is lifted from http://oofle.com/filesharing.php?app=tesla

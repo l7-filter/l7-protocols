@@ -4,8 +4,8 @@
 #
 # By adam.randazzoATgmail.com
 #
-# If you believe you can improve this pattern, please post to
-# l7-filter-developers@lists.sf.net .  You may subscribe to this list at
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/Counter-Strike
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 counterstrike-source

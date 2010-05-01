@@ -2,9 +2,8 @@
 # Pattern quality: good fast
 # Protocol groups: file
 # 
-# This pattern has been tested and is believe to work well.  If it does not
-# work for you, or you believe it could be improved, please post to 
-# l7-filter-developers@lists.sf.net .  This list may be subscribed to at
+# This pattern has been tested and is believe to work well.
+# To discuss this pattern:
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 # this should match any (X)HTML document from any version that conforms

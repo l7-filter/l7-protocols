@@ -5,9 +5,10 @@
 # Usually runs on port 1080
 # Also useful: http://www.iana.org/assignments/socks-methods
 #
-# We have had one report that this pattern works.  If it does works for you, does not work for
-# you, or you believe it could be improved, please post to
-# l7-filter-developers@lists.sf.net This list may be subscribed to at
+# We have had one report that this pattern works.
+#
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/SOCKS
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 # method request, no private methods	\x05[\x01-\x08]*

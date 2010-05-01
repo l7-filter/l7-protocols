@@ -3,16 +3,14 @@
 # Protocol groups: p2p
 #
 # Direct Connect "hubs" listen on port 411
-# Protocol info: http://wza.digitalbrains.com/DC/doc/Introduction.html
+# http://www.dcpp.net/wiki/
+# I've verified that this pattern can be used to limit direct connect
+# bandwidth using DC:PRO 0.2.3.149R11.
 #
-# This pattern is lightly tested.  If this pattern does not
-# work for you, or you believe it could be improved, please post to 
-# l7-filter-developers@lists.sf.net .  This list may be subscribed to at
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/Direct_Connect
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 directconnect
 # client-to-client handshake|client-to-hub login, hub speaking|client-to-hub login, client speaking
 ^(\$mynick |\$lock |\$key )
-
-# likely to be needlessly precise and slower
-#^(\$mynick [\x09-\x0d -~]*\|\$lock .*\||\$lock .* pk=[\x09-\x0d -~]*\|\$hubname [\x09-\x0d -~]*\||\$key .*\|\$validatenick [\x09-\x0d -~]*\|)

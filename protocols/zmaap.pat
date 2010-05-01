@@ -7,9 +7,9 @@
 # be considered a work in progress.)
 #
 # This pattern is untested!
-# Please post to l7-filter-developers@lists.sf.net as to whether it works 
-# for you or not.  If you believe it could be improved please post your 
-# suggestions to that list as well. You may subscribe to this list at 
+#
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/ZMAAP
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 zmaap

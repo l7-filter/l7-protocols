@@ -6,9 +6,9 @@
 # following conditions: "WinXP Pro with all the patches, rdesktop server 
 # running on port 7000 instead of 3389 --> WinXP Pro Remote Desktop Client."
 # Also tested is WinXP to Win 2000 Server.
-# 
-# Please report how this pattern works for you at 
-# l7-filter-developers@lists.sf.net  This list may be subscribed to at
+#
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/RDP
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 rdp

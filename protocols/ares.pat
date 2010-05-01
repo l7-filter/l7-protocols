@@ -8,9 +8,10 @@
 
 # Pattern by Brandon Enright <bmenrigh at the server known as ucsd.edu>
 
-# This pattern has been tested.  If it does not work for you as
-# advertised, or you believe it could be improved, please post to
-# l7-filter-developers@lists.sf.net .  This list may be subscribed to at
+# This pattern has been tested.
+
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/Ares
 # http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
 
 ares

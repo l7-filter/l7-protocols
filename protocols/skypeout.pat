@@ -2,6 +2,10 @@
 # Pattern Quality : ok fast undermatch overmatch
 # Protocol groups: proprietary voip
 
+# To get or provide more information about this protocol and/or pattern:
+# http://www.protocolinfo.org/wiki/Skype
+# http://lists.sourceforge.net/lists/listinfo/l7-filter-developers
+
 # Thanks to Myles Uyema, mylesuyema AT gmail.com
 
 # This is difficult to match.  You might also want to try 
