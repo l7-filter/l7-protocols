@@ -10,5 +10,8 @@
 # Requires the server's timestamp to be in the present or future (of 2005).
 # Tested with ntpdate on Linux.
 # Assumes version 2, 3 or 4.
+
+# Note that ntp packets are always 48 bytes, so you should match on that too.
+
 ntp
 ^([\x13\x1b\x23\xd3\xdb\xe3]|[\x14\x1c$].......?.?.?.?.?.?.?.?.?[\xc6-\xff])
