@@ -1,3 +1,6 @@
+2004 08 19
+Added ciscovpn.  Improved irc (it now matches BitchX connections).
+
 2004 07 07
 Added bgp.  Added Makefile and spec file.
 

@@ -2,7 +2,7 @@
 # Pattern quality: good
 # Usually runs on port 5050 
 #
-# This pattern has been tested and is believe to work well. 
+# This pattern has been tested and is believed to work well. 
 # Please post to l7-filter-developers@lists.sf.net as to whether it works 
 # for you or not.  If you believe it could be improved please post your 
 # suggestions to that list as well. You may subscribe to this list at 

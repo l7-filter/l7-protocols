@@ -1,6 +1,6 @@
 Name: l7-protocols
 Summary: Protocol definitions files for l7-filter
-Version: 2004_07_07
+Version: 2004_08_19
 Release: 1
 License: GPL
 Group: Applications/Internet
@@ -11,7 +11,7 @@ BuildRoot: %{_tmppath}/%{name}-buildroot
 %description
 Protocol definitions files for use with the Linux Layer 7 Packet Classifier.
 These files are regular expressions that define Internet protocols such as
-HTTP, MSN Messenger, FTP, Fasttrack, DNS, Gnutella, Quake, etc.
+HTTP, MSN Messenger, FTP, Cisco VPN, Fasttrack, DNS, Gnutella, Quake, etc.
 
 %prep
 %setup -q
@@ -29,5 +29,8 @@ make PREFIX=$RPM_BUILD_ROOT install
 /etc/l7-protocols/
 
 %changelog
+* Thu Aug 19 2004 Matthew Strait <quadong@users.sf.net> 2004_08_19-1
+- Upgrade to 2004_08_19
 * Wed Jul 07 2004 Matthew Strait <quadong@users.sf.net> 2004_07_07-1
 - Initial RPM
+

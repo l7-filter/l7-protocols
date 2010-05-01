@@ -1,7 +1,9 @@
+*** WHAT'S GOING ON? ***
+
 These are patterns (protocol definitions) for use with the Linux layer 7
 packet classifier (l7-filter).  In order to use them, you will need the
-kernel and iptables patches available at http://sf.net/projects/l7-filter/
- 
+Linux kernel and iptables patches available at http://sf.net/projects/l7-filter/
+
 To install these patterns into their default location, say "make install".
  
 The HOWTO at http://l7-filter.sf.net explains how to use l7-filter.
@@ -10,6 +12,9 @@ The HOWTO in this directory is a guide to writing patterns.
 
 These patterns should be used only with version 0.4.0 or higher of the
 Netfilter kernel patch.
+
+
+*** WHAT'S IN HERE? ***
 
 The patterns in the "protocols" directory are the mainstream ones.  They 
 match protocols like HTTP, FTP, eDonkey2000, Kazaa, and so on.
@@ -25,6 +30,9 @@ that are, for whatever reason, not very good.
 
 The "testing" directory contains a program for testing the speed and
 accuracy of the patterns.
+
+
+*** CAN I HELP? ***
 
 Please report your experience with l7-filter and these patterns to
 l7-filter-developers@lists.sf.net .  You may subscribe to this list at
