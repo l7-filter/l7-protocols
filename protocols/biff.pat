@@ -1,5 +1,5 @@
 # Biff - new mail notification 
-# Pattern attributes: good fast fast undermatch overmatch
+# Pattern attributes: good veryfast fast undermatch overmatch
 # Protocol groups: mail
 # Wiki: http://www.protocolinfo.org/wiki/Biff
 #

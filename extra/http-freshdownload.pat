@@ -4,7 +4,7 @@
 # Wiki: http://protocolinfo.org/wiki/HTTP
 # Uses HTTP to download.
 
-http-fresh
+http-freshdownload
 
 # Fresh Download identifies itself in the User-Agent field of every HTTP
 # request it makes.

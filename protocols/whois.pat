@@ -1,5 +1,5 @@
 # Whois - query/response system, usually used for domain name info - RFC 3912
-# Pattern attributes: good notsofast fast overmatch
+# Pattern attributes: good notsofast notsofast overmatch
 # Protocol groups: networking ietf_draft_standard
 # Wiki: http://www.protocolinfo.org/wiki/Whois
 #

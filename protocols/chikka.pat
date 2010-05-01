@@ -1,5 +1,5 @@
 # Chikka - SMS service which can be used without phones - http://chikka.com
-# Pattern attributes: good fast fast superset
+# Pattern attributes: good veryfast fast superset
 # Protocol groups: proprietary chat
 # Wiki: http://www.protocolinfo.org/wiki/Chikka
 

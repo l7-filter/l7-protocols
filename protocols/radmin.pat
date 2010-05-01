@@ -1,5 +1,5 @@
 # Famatech Remote Administrator - remote desktop for MS Windows
-# Pattern attributes: ok fast fast
+# Pattern attributes: ok veryfast fast
 # Protocol groups: remote_access proprietary
 # Wiki: http://www.protocolinfo.org/wiki/Radmin
 #

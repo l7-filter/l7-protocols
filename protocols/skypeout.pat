@@ -1,5 +1,5 @@
 # Skype to phone - UDP voice call (program to POTS phone) - http://skype.com
-# Pattern attributes: ok slow slow overmatch
+# Pattern attributes: ok slow notsofast overmatch
 # Protocol groups: voip p2p proprietary
 # Wiki: http://www.protocolinfo.org/wiki/Skype
 

@@ -12,7 +12,7 @@ elif [ $1 == "userspace" ]; then
 elif [ $1 == "kernel" ]; then
 	kernel=1
 else
-	echo huh?  Say \"userspace\", \"kernel\" or nothing.
+	echo huh?  Say \"userspace\", \"kernel\" or nothing \(which does both\).
 	exit 1
 fi
 
