@@ -9,3 +9,4 @@
 # Live For Speed S2 Alpha 0.5 X10
 liveforspeed
 ^..\x05\x58\x0a\x1d\x03
+# The same guy came by the next day and deleted the \x03 without comment...
