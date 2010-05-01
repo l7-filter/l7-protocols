@@ -1,4 +1,9 @@
-2006 01 XX
+2006 02 12
+Updated WANTED.  Added uucp (ha!) and a VERY preliminary version of
+pcanywhere.  Improved msnmessenger. It now catches actual conversations
+and not just the logins.
+
+2006 01 22
 Modified dns and unknown so that they do not generate warnings about having
 control characters or nulls in hex.
 Improved dns.  Now it matches XXX.XXX.XXX.XXX.in-addr.arpa lookups and IPv6

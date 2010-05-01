@@ -1,4 +1,4 @@
-# SIP - Internet telephony - RFC 3261
+# SIP - Session Initiation Protocol - Internet telephony - RFC 3261
 # Pattern quality: ok veryfast
 # Protocol groups: ietf_proposed_standard voip
 #
