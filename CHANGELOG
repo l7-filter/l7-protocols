@@ -1,3 +1,6 @@
+2005 09 05
+Added citrix, whois.
+
 2005 09 03
 irc now allows MIRC color codes. Fixed commented out dns and nntp
 patterns. Added a set of real data to speed testing program.
@@ -273,3 +276,27 @@ Fixed ftp.  Added gkrellm. Simplified tftp.
 
 2003 08 09
 Fixed dhcp.  Added tftp.  Improved aim.
+
+2003 08 08
+Updated DHCP pattern. Improved pattern comments, including adding status
+information (i.e. how well they work) for all the patterns. Added
+LICENSE file so it's clear these are released as part of the code of the
+l7-filter project.
+
+2003 07 07
+Added rdp.
+
+2003 06 01
+Added aim, bittorrent, nbns, ncp, dhcp, rstp, ipp, msnmessenger,
+aimwebcontent.  Removed mohaa.
+
+2003 05 23
+Added gnucleuslan, validcertssl, counterstrike, gnutella, kazaa, smtp, mohaa.
+
+2003 05 09
+Cleaned up.
+
+2003 05 07
+This is the initial release.  Currently we have primitive detection of
+ftp, http, imap, kazaa, pop3, and ssh. Expect future releases to include
+both more patterns and better definitions for the above protocols.
