@@ -16,9 +16,10 @@ using namespace std;
 #include <fstream>
 #include <iostream>
 #include <sys/types.h>
+#include <stdlib.h>
 #include "l7-parse-patterns.h"
 
-#define MAX 1500
+#define MAX 512
 
 static int hex2dec(char c)
 {
@@ -69,11 +70,9 @@ void doit(regex_t * pattern, int eflags, int verbose, int nexec)
 	char input[MAX];
 	int c;
 
-	for(c = 0; c < MAX; c++)
-	{
+	for(c = 0; c < MAX; c++){
 		char temp = 0;
-		while(temp == 0)
-		{
+		while(temp == 0){
 			if(EOF == scanf("%c", &temp))
 				goto out;
 			input[c] = temp;

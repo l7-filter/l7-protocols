@@ -6,7 +6,7 @@ extract()
 	# this can miss pseudo-valid files that have crap after the pattern
 		cat $1 | grep -v ^$ | grep -v ^# | tail -1
 	else
-		echo Arg is not a readable file > /dev/stderr
+		echo Argument is not a readable file > /dev/stderr
 		exit 1
 	fi
 }
@@ -17,9 +17,11 @@ if [ ! $1 ]; then
 fi
 
 if [ ! $2 ]; then
+	echo
 	echo Using the userspace pattern and library.
-	echo You can change this by saying \"kernel\" as the second arg.
-	matchprog=./test_speed-userspace
+	echo You can change this by saying \"kernel\" as the second argument.
+	echo
+	matchprog=./test_speed-userspace # no, really
 elif [ $2 == "kernel" ]; then
 	echo Using the kernel pattern and library.
 	matchprog=./match_kernel
@@ -35,8 +37,10 @@ if [ $3 ]; then
 	times=$3
 else
 	times=500
+	echo
 	echo Doing 500 repetitions of each test.
-	echo You can change this by giving a number as the third arg.
+	echo You can change this by giving a number as the third argument.
+	echo
 fi
 
 if [ -x ./randchars ] && [ -x $matchprog ] && [ -x ./randprintable ]; then
@@ -53,7 +57,7 @@ pattern="`extract $1`"
 
 for f in `seq $times`; do
 	if [ $3 ]; then printf . > /dev/stderr; fi
-	if [ $2 ] && [ $2 == "henry" ]; then
+	if [ $2 ] && [ $2 == "kernel" ]; then
 		if ! ./randchars | $matchprog "$pattern"; then exit 1; fi
 	else
 		if ! ./randchars | $matchprog -f $1 -n 1 -v; then exit 1; fi
@@ -64,9 +68,13 @@ printf "Out of $times printable random streams, this many match:  "
 
 for f in `seq $times`; do
 	if [ $3 ]; then printf . > /dev/stderr; fi
-	if [ $2 ] && [ $2 == "henry" ]; then
-		if ! ./randprintable | $matchprog "$pattern"; then exit 1; fi
+	if [ $2 ] && [ $2 == "kernel" ]; then
+		if ! ./randprintable | $matchprog "$pattern"; then 
+                	exit 1
+		fi
 	else
-		if ! ./randprintable | $matchprog -v -n 1 -f $1; then exit 1; fi
+		if ! ./randprintable | $matchprog -v -n 1 -f $1; then 
+			exit 1
+		fi
 	fi
 done | grep -iE '^match' -c

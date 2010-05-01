@@ -11,6 +11,7 @@ See ../LICENCE for copyright
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdlib.h>
 #include "regexp/regexp.c"
 
 #define MAX 1500
@@ -67,11 +68,9 @@ void doit(regexp * pattern, char ** argv, int verbose)
 	char input[MAX];
 	int c;
 
-	for(c = 0; c < MAX; c++)
-	{
+	for(c = 0; c < MAX; c++){
 		char temp = 0;
-		while(temp == 0)
-		{
+		while(temp == 0){
 			if(EOF == scanf("%c", &temp))
 				goto out;
 			input[c] = temp;

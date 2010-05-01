@@ -67,8 +67,8 @@ int main(int argc, char ** argv)
 	char input[MAX];
 	int patternlen, inputlen = 0, c = 0;
 
-	if(!argv[1]){
-		fprintf(stderr, "need an arg (the pattern)\n");
+	if(argc != 2 || !argv[1]){
+		fprintf(stderr, "need exactly one arg (the pattern)\n");
 		return 1;
 	}
 	patternlen = strlen(s);
@@ -76,6 +76,8 @@ int main(int argc, char ** argv)
 		fprintf(stderr, "Pattern is too long!  Max is %d.\n", MAX_PATTERN_LEN);
 		return 1;
 	}
+
+//	fprintf(stderr, "\"%s\"", s);
 
 	s = pre_process(s); /* do \xHH escapes */
 
@@ -86,12 +88,27 @@ int main(int argc, char ** argv)
 		exit(1);
 	}
 
+/*
 	for(c = 0; c < MAX; c++){
 		// assumes there's plenty to eat
 		input[inputlen] = getchar();
 		inputlen++;
 	}
 	input[inputlen] = '\0';
+*/
+        for(c = 0; c < MAX; c++){
+                char temp = 0;
+                while(temp == 0){
+                        if(EOF == scanf("%c", &temp))
+                                goto out;
+                        input[c] = temp;
+                }
+        }
+        out:
+
+        input[c-1] = '\0';
+
+	inputlen = c;
 
 	for(c = 0; c < inputlen; c++)	input[c] = tolower(input[c]);
 
