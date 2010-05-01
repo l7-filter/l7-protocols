@@ -1,3 +1,9 @@
+2006 06 03
+Improved "lime" packet detection in gnutella.  Fixed and/or tested
+skypeout and skypetoskype, they now both work, at least with Skype
+1.2.0.18_API on Linux, although skypeout is a rather severe overmatch
+(but no longer an undermatch).
+
 2006 05 29
 Reformatted wiki links for webpage parsing.  Fixed gkrellm.  Moved
 pressplay to extra/.  Renamed "pattern quality" "pattern attributes". 
