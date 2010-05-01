@@ -1,5 +1,6 @@
-This is a guide for writing protocol definitions for l7-filter.  If you
-want a HOWTO for using l7-filter, see http://l7-filter.sf.net/L7-HOWTO-Netfilter
+This is a guide for writing protocol definitions for l7-filter.  
+See also the general HOWTO: http://l7-filter.sf.net/L7-HOWTO-Netfilter
+And the FAQ: http://l7-filter.sourceforge.net/L7-FAQ
 
 *** File Format ***
 
@@ -9,11 +10,11 @@ want a HOWTO for using l7-filter, see http://l7-filter.sf.net/L7-HOWTO-Netfilter
 Lines starting with '#', blank lines and any lines after the regular
 expression line are ignored. 
 
-The name of the file must match the protocol defined in it.  (e.g. if the
-protocol is "ftp", the file must be called "ftp.pat".)
+The name of the file must match the protocol defined in it.  (If the
+protocol is "ftp", the file must be "ftp.pat".)
 
-Additionally, pattern files that are part of the official distribution
-need some metadata at the top for display on the webpage. The top lines
+(Optional) Pattern files that are part of the official distribution need
+some metadata at the top for display on the webpage. The top two lines
 should look like this:
 
 # <Protocol name and some concise detail about the protocol>
@@ -26,20 +27,25 @@ http://l7-filter.sourceforge.net/protocols
 
 *** Regular Expressions ***
 
-l7-filter uses V8 regular expresions (see, for instance,
-www.hmug.org/man/3/regsub.html) plus perl-style hex matching using \xHH
-notation (so to match a tab, use "\x09").  So our regexps may be more
-limited than ones you are used to. Notably, you CANNOT use bounds
-("foo{3}"), character classes ("[[:punct:]]") or backreferences. 
+l7-filter uses V8 regular expresions (see www.hmug.org/man/3/regsub.html) 
+So our regexps may be more limited than ones you are used to. Notably,
+you CANNOT use bounds ("foo{3}"), character classes ("[[:punct:]]") or
+backreferences. 
+
+In addition, we've added perl-style hex matching using \xHH notation (so
+to match a tab, use "\x09").  Note that regexp control characters like
+(e.g. "|") are _still_ control characters even when written in hex (e.g.
+"\7c") so be careful.
 
 l7-filter is case insensitive.  Using upper case in patterns is
-identical to using lower case.
+identical to using lower case.  (This is true even if you write the
+uppercase letter in hex.)
 
 l7-filter strips out nulls (\x00 bytes) so that it can treat network
-data as normal C strings.  Thus, you can't match on nulls.  Also, fields
-may appear shorter than expected.  For example, if a protocol has a 4
-byte field and any of those bytes can be null, it can appear to be any
-length from 0 to 4.
+data as normal C strings.  (See our FAQ for why.)  Thus, you can't match
+on nulls.  Also, fields may appear shorter than expected.  For example,
+if a protocol has a 4 byte field and any of those bytes can be null, it
+can appear to be any length from 0 to 4.
 
 Useful things:
 
@@ -89,10 +95,10 @@ it is likely that someone has written a reverse-engineered spec for it.
 Do a general web search to find it.  Skipping this step is a good way to
 write patterns that are overly specific!
 
-2) Use Ethereal (http://www.ethereal.com/) to watch packets of this
-protocol go by in a typical session of its use.  (If you failed to find
-a spec for your protocol, but Ethereal can parse it, reading the
-Ethereal source code may also be worth your time.)
+2) Use something like Ethereal (http://www.ethereal.com/) to watch
+packets of this protocol go by in a typical session of its use.  (If you
+failed to find a spec for your protocol, but Ethereal can parse it,
+reading the Ethereal source code may also be worth your time.)
 
 3) Write a pattern that will reliably match one of the first few packets
 that are sent in your protocol.  Test it.  Test its performance.

@@ -3,27 +3,25 @@ Using these programs, you can:
 - test the speed of patterns in user space.
 - test whether your pattern matches random data (which is bad).
 
-Note that these are crude tests and that better ones could certainly be devised!
+Note that these are crude tests and better ones could certainly be devised!
 
 Start by saying "make".
 
 ************************************************************************
 
-To test the speed of the pattern in the file "foo.pat":
+To test the speed of the pattern in the file "foo.pat": "./timeit.sh foo.pat"
+Or to test the pattern "foo|bar":                       "./timeit.sh 'foo|bar'"
+To test all patterns, run                               "./test_all.sh"
 
-./timeit.sh foo.pat
+You'll find that our regexp library has some performance quirks.  Things
+we've noticed:
 
-Or to test the pattern "foo|bar":
+- Branches are very expensive.  Testing for "foo|bar" takes much
+longer than twice as long as testing for "foo".  
 
-./timeit.sh 'foo|bar'
+- Parentheses aren't optimized out.  "(foo)" takes much longer than "foo".
 
-You'll find that our regexp library has some performance quirks.  For
-instance, branches are very expensive.  Testing for "foo|bar" takes MUCH
-longer than twice as long as testing for "foo".  Also, parentheses aren't 
-optimized out.  That is, "(foo)" takes MUCH longer than "foo".  And
-"^(foo|bar)" is much faster than "^foo|^bar".
-
-To test all patterns, run "./test_all.pat".
+- "^(foo|bar)" is much faster than "^foo|^bar".
 
 ***********************************************************************
 

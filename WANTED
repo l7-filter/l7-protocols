@@ -8,7 +8,7 @@ Citrix - http://citrix.com
 The below is taken from the list of protocols supported by the
 Packeteer, a commercial packet shaper (see pg 197 of
 www.packeteer.com/support/resources/41.refguide.pdf). Some of these are
-important, and many are probably used so infrequently that they are not
+important, but many are probably used so infrequently that they are not
 really worth writing patterns for...
  
 ActiveX		Microsoft's object-oriented program technologies and tools
@@ -29,7 +29,6 @@ CUSeeMe		Internet telephone application
 DCOM		Microsoft Distributed Component Object Model
 DECnet		Digital Equipment Corporation's network protocol
 DLS		SNA/FNA over TCP-Data Link Switch traffic
-Doom		Doom, the game
 DPA		Microsoft's Distributed Password Authentication
 DRP		DECnet Routing Protocol
 EGP		Network Routing Information (Exterior Gateway Protocol)
@@ -52,7 +51,6 @@ MSSQ		Microsoft Message Queue Traffic
 MS-SQL		Microsoft SQL Mon and Server traffic
 NetBEUI		NetBEUI--Network protocol for PCs
 NFS		Network File System (both TCP and UDP)
-NTP		Network Time Protocol
 OpenConnect-JCP Browser-based access to host applications
 Oracle		Database application
 OSI		OSI over TCP (RFC2126), e.g., Microsoft Exchange X.400
@@ -62,7 +60,6 @@ PIM		Protocol-Independent Multicast Routing Protocol
 PointCast	Push technology application
 RADIUS		Remote Authentication Dial-in Service
 RC5DES		DES (data encryption standard) encryption-cracking application
-RealAudio	RealAudio streaming audio/video app-TCP/UDP (done?)
 REXEC		UNIX remote execution protocol
 RIP		Routing Information Protocol (UDP)
 RTCP-B		Real-time control protocol
