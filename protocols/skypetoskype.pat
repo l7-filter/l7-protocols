@@ -7,5 +7,5 @@ skypetoskype
 ^..\x02
 
 # This might work.  I'm waiting for more information.
-# ^..\x02..........................
+#^..\x02..........................
 

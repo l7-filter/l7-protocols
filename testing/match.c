@@ -3,6 +3,7 @@
 #include "regexp/regexp.c"
 
 #define MAX 512
+#define MAX_PATTERN_LEN 8196
 
 static int hex2dec(char c)
 {
@@ -60,6 +61,10 @@ int main(int argc, char ** argv)
 		return 1;
 	}
 	patternlen = strlen(s);
+	if(patternlen > MAX_PATTERN_LEN){
+		fprintf(stderr, "Pattern is too long!  Max is %d.\n", MAX_PATTERN_LEN);
+		return 1;
+	}
 
 	s = pre_process(s); /* do \xHH escapes */
 

@@ -33,9 +33,20 @@ you CANNOT use bounds ("foo{3}"), character classes ("[[:punct:]]") or
 backreferences. 
 
 In addition, we've added perl-style hex matching using \xHH notation (so
-to match a tab, use "\x09").  Note that regexp control characters like
-(e.g. "|") are _still_ control characters even when written in hex (e.g.
-"\7c") so be careful.
+to match a tab, use "\x09").  Note that regexp control characters, are
+still control characters even when written in hex:
+
+\x24 == $ (only matters if it's the last character)
+\x28 == (
+\x29 == )
+\x2a == *
+\x2b == +
+\x2e == .
+\x3f == ?
+\x5b == [
+\x5c == \
+\x5e == ^ (only matters if it's the first character)
+\x7c == |
 
 l7-filter is case insensitive.  Using upper case in patterns is
 identical to using lower case.  (This is true even if you write the

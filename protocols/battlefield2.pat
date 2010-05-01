@@ -1,5 +1,5 @@
 # Battlefield 2 - An EA game.
-# Pattern quality: ok nosofast
+# Pattern quality: ok notsofast
 #
 # This pattern is unconfirmed.
 # Please post to l7-filter-developers@lists.sf.net as to whether it works

@@ -35,13 +35,13 @@ for arg in $@; do
 
 	for f in `seq $times`; do
 		if [ $2 ]; then printf . > /dev/stderr; fi
-		./randchars | ./match "`extract $arg`" 
+		if ! ./randchars | ./match "`extract $arg`"; then exit 1; fi
 	done | grep -v No -c
 
 	printf "Out of $times printable random streams, this many match: " 
 
 	for f in `seq $times`; do
 		if [ $2 ]; then printf . > /dev/stderr; fi
-		./randprintable | ./match "`extract $arg`"
+		if ! ./randprintable | ./match "`extract $arg`"; then exit 1; fi
 	done | grep -v No -c
 done

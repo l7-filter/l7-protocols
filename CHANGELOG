@@ -1,3 +1,7 @@
+2005 07 28
+Skypeout was too long, fixed.  Added checks in tests for this.  Added some
+info to HOWTO.  Improved gnutella (picks up limewire wierdness).
+
 2005 07 17
 Changed license to dual GPL/CC, since we're using CC on protocolinfo.org.
 Changed skypeout pattern to the scary long one, because the old one just

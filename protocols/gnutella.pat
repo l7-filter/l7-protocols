@@ -27,5 +27,6 @@ gnutella
 # we can't see client messages).  Some parts of this are empirical rather than 
 # document based.  Assumes version is between 0.0 and 2.9. (usually is
 # 0.4 or 0.6).  I'm guessing at many of the user-agents.
+# The last bit is emprical and probably only matches Limewire.
+^gnd[\x01\x02]?.?.?\x01|^(gnutella connect/[012]\.[0-9]\x0d\x0a|get /uri-res/n2r\?urn:sha1:|get /[\x09-\x0d -~]*(gwebcache|gcache|gwc)|get /[\x09-\x0d -~]*user-agent: (gtk-gnutella|bearshare|mactella|gnucleus|gnotella|limewire|imesh|winmx)|get /[\x09-\x0d -~]*content-type: application/x-gnutella-packets|giv [0-9]*:[0-9a-f]*/|queue [0-9a-f]* [1-9][0-9]?[0-9]?\.[1-9][0-9]?[0-9]?\.[1-9][0-9]?[0-9]?\.[1-9][0-9]?[0-9]?:[1-9][0-9]?[0-9]?[0-9]?)|^gnutella[\x09-\x0d -~]*content-type: application/x-gnutella|^..................lime
 
-^gnd[\x01\x02]?.?.?\x01|^(gnutella connect/[012]\.[0-9]\x0d\x0a|get /uri-res/n2r\?urn:sha1:|get /[\x09-\x0d -~]*(gwebcache|gcache|gwc)|get /[\x09-\x0d -~]*user-agent: (gtk-gnutella|bearshare|mactella|gnucleus|gnotella|limewire|imesh|winmx)|get /[\x09-\x0d -~]*content-type: application/x-gnutella-packets|giv [0-9]*:[0-9a-f]*/|queue [0-9a-f]* [1-9][0-9]?[0-9]?\.[1-9][0-9]?[0-9]?\.[1-9][0-9]?[0-9]?\.[1-9][0-9]?[0-9]?:[1-9][0-9]?[0-9]?[0-9]?)|^gnutella[\x09-\x0d -~]*content-type: application/x-gnutella
