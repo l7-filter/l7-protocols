@@ -1,3 +1,9 @@
+2011 11 03
+Fixed missing OR ('|') character in bittorrent pattern.
+
+2011 10 28
+Updated finger protocol pattern to reduce over matching (slightly).
+
 2010 10 25
 Improved Quake 3 Halflife protocol detection (added getstatus). See
 quake-halflife.pat for details.  Added RTMP protocol pattern (rtmp.pat).
